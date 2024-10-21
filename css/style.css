@@ -8,8 +8,8 @@
     font-family: "Oxanium", sans-serif;
     font-optical-sizing: auto;
     
-  }
-  
+}
+
 /* Navbar */
 .navbar-brand img {
     border-radius: 50%;
@@ -25,10 +25,11 @@
     background-color: #a1a1a1;
 }
 
-.nav-item a:hover, .nav-item:hover {
+.nav-item a:hover, .nav-item:hover{
     background: #6a186d;
     color: white;
 }
+
 
 /* Pagina Home */
 

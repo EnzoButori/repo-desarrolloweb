@@ -99,6 +99,10 @@
     box-shadow: 7px 13px 25px #000; 
 }
 
+.imagen-carousel {
+    border-radius: 24px;
+}
+
 .slide:hover{
     transition: all .5s;
     transform: scale(1.1);

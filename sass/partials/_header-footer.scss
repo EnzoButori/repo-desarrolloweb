@@ -1,0 +1,89 @@
+/* header */
+
+.navbarbg {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #a1a1a1;
+    .navimg img {
+        border-radius: 50%;
+    }
+    li:hover, li a:hover{
+        background: #6a186d;
+        color: white;
+    }
+}
+
+/* footer */
+
+.cont-footer img {
+    margin: 20px;
+    height: 50px;
+    width: 50px; 
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    border-radius: 50%;
+}
+
+.cont-footer img:hover{
+    transition: all .5s;
+    transform: scale(1.1);
+}
+
+.footer {
+    background-color: #000000;
+    height: 150px;
+    display: flex;
+    justify-content: space-around; 
+    padding: 0 20px;
+    .metodos-de-pago {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        width: 30%;
+        h6 {
+            margin: 10px;
+            margin-left: 10px;
+            justify-content: left;
+            color: #ffffff;
+        }
+        img {
+            max-height: 120px;
+            width: 120px;
+            margin-left: 20px;
+        }
+        
+    }
+    .redes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 30%;
+        h6 {
+            margin: 5px;
+            color: #ffffff;
+        }
+        a {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            margin: 2px;
+            height: 25px;
+            text-decoration: none;
+            color: #ffff;
+        }
+        img{
+            height: 25px;
+            margin-right: 10px;
+        }
+    }
+}
+
+/* Linea separadora */
+
+.linea {
+    margin: 5px;
+    background-color: #57027f;
+    height: 5px;
+}

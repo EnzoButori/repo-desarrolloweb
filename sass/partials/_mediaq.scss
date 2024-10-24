@@ -1,0 +1,202 @@
+@media (max-width: 699px){
+
+    .introbanner img {
+        margin: 10px;
+        height: 200px;
+        width: 100%;
+        object-fit: contain;
+    }
+
+    .intro h2 {
+        display: grid;
+        place-items: center;
+        color: #57027f;
+        text-shadow: 0px 0px 10px #f5a4e7,
+                     0px 0px 20px #f5a4e7;
+        margin: 10px;
+    }
+
+    .parrafo{
+        display: grid;
+        place-self: center;
+        width: 75%;
+    }
+
+    .slide {
+        margin: 20px;
+        display: grid;
+        place-self: center;
+        width: 300px;
+        border-radius: 24px;
+        box-shadow: 7px 13px 25px #000; 
+    }
+
+    .sobre-nosotros img {
+        margin: 20px;
+        display: grid;
+        place-self: center;
+        border-radius: 24px;
+        width: 300px;
+        box-shadow: 7px 13px 25px #000;
+    }
+    
+    .servicio img {
+        margin: 20px;
+        display: grid;
+        place-self: center;
+        border-radius: 24px;
+        width: 300px;
+        box-shadow: 7px 13px 25px #000;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .metodos-de-pago {
+        width: 20%;
+        h6 {
+            font-size: 12px;
+        }
+        img {
+            max-height: 120px;
+            width: 120px;
+            margin-left: 20px;
+        }
+    }
+   
+    .redes {
+        width: 20%;
+        h6 {
+            font-size: 12px;
+        }
+        a {
+            font-size: 12px;
+        }
+        img{
+            height: 15px;
+        }
+    }
+
+    .cont-footer img {
+        height: 30px;
+        width: 30px; 
+    }
+
+    .container-items-ap {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 50px;
+        margin: 50px;
+        margin-bottom: 250px;
+    }
+
+    .container-items-mc {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 50px;
+        margin: 50px;
+        margin-bottom: 250px;
+    }
+
+    .container-items {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        margin: 50px;
+        margin-bottom: 250px;
+    }
+
+    .item img {
+        width: 100%;
+        height: 120px;
+        border-radius: 10px 10px 0 0;
+        transition: all .5s;
+    }
+
+    .item-mc img {
+        width: 100%;
+        height: 120px;
+        border-radius: 10px 10px 0 0;
+        transition: all .5s;
+    }
+
+    .forms {
+        width: 70%;
+    }
+    
+    .wpp {
+        width: 70%;
+    }
+    
+    .About {
+        width: 70%;
+        background-color: #57027f;
+        padding: 30px;
+        margin: auto;
+        margin-top: 100px;
+        border-radius: 16px;
+        color: white;
+        box-shadow: 7px 13px 37px #000;
+        h4 {
+            font-size: 26px;
+            margin-bottom: 15px;
+            color: #e648be;
+        }
+    }
+    
+   
+    
+    .location {
+        width: 70%;
+        .mapa {
+            margin-left: 10px;
+        }
+    }
+    
+    
+    
+    
+}
+
+@media (min-width: 700px) and (max-width: 1261px) {
+    .container-items-ap {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+        margin: 50px;
+        margin-bottom: 250px;
+    }
+
+    .container-items-mc {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+        margin: 50px;
+        margin-bottom: 250px;
+    }
+
+
+    .container-items {
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        margin: 50px;
+        margin-bottom: 250px;
+    }
+
+    .item img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px 10px 0 0;
+        transition: all .5s;
+    }
+
+    .item-mc img {
+        width: 100%;
+        height: 120px;
+        border-radius: 10px 10px 0 0;
+        transition: all .5s;
+    }
+}

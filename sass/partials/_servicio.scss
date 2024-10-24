@@ -1,0 +1,51 @@
+.sop {
+    width: 500px;
+    background-color: #57027f;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 16px;
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+    h3 {
+        font-size: 26px;
+        margin-bottom: 15px;
+        color: #e648be;
+    }
+}
+
+.presupuesto {
+    width: 500px;
+    background-color: #57027f;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    border-radius: 16px;
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+    h3 {
+        font-size: 26px;
+        margin-bottom: 15px;
+        color: #e648be;
+    }
+    p {
+        margin-bottom: 10px;
+    }
+    .botons {
+        width: 100%;
+        background: rgb(226, 64, 187);
+        border: none;
+        padding: 12px;
+        margin: 16px 0;
+        font-size: 16px;
+        border-radius: 16px;
+    }
+    .botons:hover {
+        background-color: rgb(207, 84, 255);
+        color: #ffffff;
+        border: none;
+    }
+}
+
+

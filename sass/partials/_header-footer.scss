@@ -4,12 +4,13 @@
     position: sticky;
     top: 0;
     z-index: 1000;
-    background-color: #a1a1a1;
+    background: linear-gradient(to right, rgb(255, 255, 255), rgb(249, 139, 253));
     .navimg img {
         border-radius: 50%;
     }
     li:hover, li a:hover{
-        background: #6a186d;
+        border-radius: 24px;
+        background: #ff00f2;
         color: white;
     }
 }
@@ -84,6 +85,6 @@
 
 .linea {
     margin: 5px;
-    background-color: #57027f;
+    background-color: #ff00ff;
     height: 5px;
 }

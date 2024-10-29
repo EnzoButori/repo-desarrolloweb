@@ -3,15 +3,15 @@
 .body {
     font-family: "Oxanium", sans-serif;
     font-optical-sizing: auto;
-    
+    background-image: linear-gradient(to top, #cd9cf2 0%, #f6f3ff 100%);
 }
 
 /* Banner */
 
 .introbanner {
+    height: 300px;
     position: relative;
     h1 {
-    
         color: #ffffff;
         text-shadow: 0px 0px 10px #ff00d4,
                      0px 0px 20px #ff00d4;
@@ -22,12 +22,6 @@
         text-align: center;
         width: 100%;
     }
-    img {
-        margin: 10px;
-        height: 500px;
-        width: 100%;
-        object-fit: fill;
-    }
 }
 
 /* Bienvenida */
@@ -36,16 +30,16 @@
     h2 {
         display: grid;
         place-items: center;
-        color: #57027f;
-        text-shadow: 0px 0px 10px #f5a4e7,
-                     0px 0px 20px #f5a4e7;
+        color: #ffffff;
+        text-shadow: 0px 0px 10px #ff00d4,
+                     0px 0px 20px #b6119a;
     }
     .parrafo {
-        color: #000;
+        color: #000000;
         display: grid;
         place-self: center;
         width: 50%;
-        text-shadow: 1px 1px 10px #2c2c2c,
+        text-shadow: 1px 1px 10px #ff00ff,
     }
 }
 
@@ -55,9 +49,9 @@
     margin: 20px;
     display: grid;
     place-items: center;
-    color: #f1bae8;
-    text-shadow: 0px 0px 10px #57027f,
-                 0px 0px 20px #57027f;
+    color: #ffffff;
+    text-shadow: 0px 0px 10px #ff00d4,
+                 0px 0px 20px #b6119a;
 }
 
 .slide {
@@ -81,9 +75,9 @@
         margin: 20px;
         display: grid;
         place-items: center;
-        color: #f1bae8;
-        text-shadow: 0px 0px 10px #57027f,
-                     0px 0px 20px #57027f;
+        color: #ffffff;
+        text-shadow: 0px 0px 10px #ff00d4,
+                     0px 0px 20px #b6119a;
     }
     img {
         margin: 20px;
@@ -104,9 +98,9 @@
         margin: 20px;
         display: grid;
         place-items: center;
-        color: #f1bae8;
-        text-shadow: 0px 0px 10px #57027f,
-                     0px 0px 20px #57027f;
+        color: #ffffff;
+        text-shadow: 0px 0px 10px #ff00d4,
+                     0px 0px 20px #b6119a;
     }
     img {
         margin: 20px;

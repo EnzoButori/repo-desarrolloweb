@@ -20,12 +20,30 @@
         background: #ff00f2;
         color: white;
     }
-    .bolsa {
-        img{
-            height: 50px;
-        }
-    }
 }
+
+.cart-icon {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .cart-icon img {
+    margin-right: 20px;
+    width: 50px;
+    height: 50px;
+  }
+  
+  /* Contador del carrito */
+  .cart-count {
+    position: absolute;
+    top: 1px;
+    right: 13px;
+    background-color: rgb(206, 30, 250);
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+  }
 
 /* footer */
 

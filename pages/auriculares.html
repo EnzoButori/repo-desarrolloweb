@@ -35,18 +35,24 @@
                   <li class="nav-item">
                     <a class="nav-link" href="./nosotros.html">Sobre Nosotros</a>
                   </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Productos
-                    </a>
+                  <div class="navdp btn-group">
+                    <a href="./pages/productos.html"><button type="button" class="btn">Productos</button></a>
+                    <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                      <span class="visually-hidden">Toggle Dropdown</span>
+                    </button>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="./iphones.html">Iphones</a></li>
-                      <li><a class="dropdown-item" href="./macbooks.html">MacBooks</a></li>
-                      <li><a class="dropdown-item" href="./auriculares.html">AirPods</a></li>
+                      <li><a class="dropdown-item" href="./pages/iphones.html">Iphones</a></li>
+                      <li><a class="dropdown-item" href="./pages/macbooks.html">MacBooks</a></li>
+                      <li><a class="dropdown-item" href="./pages/auriculares.html">AirPods</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="./pages/productos.html">Todas las categorias</a></li>
                     </ul>
-                  </li>
+                  </div>
                 </ul>
               </div>
+            </div>
+            <div class="bolsa">
+              <img src="../imagenes/bolsa.jpg" alt="Carrito de Compras">
             </div>
           </nav>
     </header>
@@ -91,7 +97,7 @@
 
     <footer class="footer">
         <div class="cont-footer">
-          <a href="./pages/contacto.html">
+          <a href="./contacto.html">
             <img src="../imagenes/soporte.jpg" alt="">
           </a>
         </div>
@@ -120,5 +126,6 @@
     <script>
       AOS.init();
     </script>
+    <script src="../js/main.js"></script>
 </body>
 </html>

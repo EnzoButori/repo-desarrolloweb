@@ -9,9 +9,19 @@
   border-radius: 50%;
 }
 .navbarbg li:hover, .navbarbg li a:hover {
-  border-radius: 24px;
   background: #ff00f2;
   color: white;
+}
+.navbarbg .navdp a {
+  text-decoration: none;
+}
+.navbarbg .navdp:hover, .navbarbg .navdp a:hover {
+  text-decoration: none;
+  background: #ff00f2;
+  color: white;
+}
+.navbarbg .bolsa img {
+  height: 50px;
 }
 
 /* footer */
@@ -507,18 +517,11 @@
 }
 
 @media (max-width: 699px) {
-  .introbanner img {
-    margin: 10px;
-    height: 200px;
-    width: 100%;
-    -o-object-fit: contain;
-       object-fit: contain;
-  }
   .intro h2 {
     display: grid;
     place-items: center;
-    color: #57027f;
-    text-shadow: 0px 0px 10px #f5a4e7, 0px 0px 20px #f5a4e7;
+    color: #ffffff;
+    text-shadow: 0px 0px 10px #ff00d4, 0px 0px 20px #b6119a;
     margin: 10px;
   }
   .parrafo {

@@ -1,19 +1,14 @@
 @media (max-width: 699px){
 
-    .introbanner img {
-        margin: 10px;
-        height: 200px;
-        width: 100%;
-        object-fit: contain;
-    }
-
-    .intro h2 {
-        display: grid;
-        place-items: center;
-        color: #57027f;
-        text-shadow: 0px 0px 10px #f5a4e7,
-                     0px 0px 20px #f5a4e7;
-        margin: 10px;
+    .intro {
+        h2 {
+            display: grid;
+            place-items: center;
+            color: #ffffff;
+            text-shadow: 0px 0px 10px #ff00d4,
+                         0px 0px 20px #b6119a;
+            margin: 10px;
+        }
     }
 
     .parrafo{

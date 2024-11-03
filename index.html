@@ -8,8 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link class="icono" rel="icon" href="../Imagenes/DELTAIcon.png">
     <title>Delta - Home</title>
 </head>
@@ -52,11 +52,26 @@
                 </ul>
               </div>
             </div>
+            <div class="carrito-container">
+              <!-- Icono del carrito con contador -->
+              <div class="carrito-icono" onclick="toggleCarritoDropdown()">
+                <img src="carrito.png" alt="Carrito" id="icono-carrito" />
+                <span id="contador-carrito">0</span>
+              </div>
+              <!-- Dropdown del carrito -->
+              <div id="carrito-dropdown" class="carrito-dropdown">
+                <h2>Carrito de Compras</h2>
+                <ul id="carrito-lista"></ul>
+                <div class="total">
+                  <p>Total: $<span id="precio-total">0</span></p>
+                </div>
+              </div>
+            </div>
           </nav>
     </header>
     
     <div class="introbanner">
-      <h1 class="display-1 ">Mundo Delta</h1>
+      <h1 class="display-1">Mundo Delta</h1>
     </div>
 
     <div class="linea"></div>
@@ -76,8 +91,8 @@
 
     <!-- Slider productos -->
     <div class="productos">
-        <h2 class="h2-index">Productos</h2>
-        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <h2 class="h2-index aparecer">Productos</h2>
+        <div id="carouselExampleAutoplaying" class="carousel slide aparecer" data-bs-ride="carousel">
             <div class="carousel-inner">
             <div class="carousel-item active">
                 <a href="./pages/productos.html">
@@ -106,14 +121,14 @@
         </div>
     </div>
     <!-- Nosotros (Acerca de la empresa) -->
-    <div class="sobre-nosotros">
+    <div class="sobre-nosotros aparecer">
         <h2 class="h2-index">Sobre Nosotros</h2>
         <a href="./pages/nosotros.html">
           <img src="./imagenes/DELTA.png" alt="">
         </a>
     </div>
     <!-- Contacto -->
-    <div class="servicio">
+    <div class="servicio aparecer">
       <h2 class="h2-index">Servicio Tecnico</h2>
       <a href="./pages/serviciotecnico.html">
         <img src="./imagenes/iphoneroto (1).jpg" alt="">

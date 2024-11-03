@@ -1,0 +1,22 @@
+@keyframes aparecer {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  
+  .aparecer {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s, transform 0.6s;
+  }
+  
+  
+  .aparecer-visible {
+    animation: aparecer 0.6s forwards;
+  }

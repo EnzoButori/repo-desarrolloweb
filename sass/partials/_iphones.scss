@@ -44,3 +44,67 @@
     font-weight: 900;
 }
 
+.carrito-container {
+    position: relative;
+  }
+  
+  .carrito-icono {
+    font-size: 24px;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  #icono-carrito {
+    width: 30px; /* Ajusta el tamaño de la imagen aquí */
+    height: auto;
+  }
+  
+  #contador-carrito {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background: red;
+    color: white;
+    border-radius: 50%;
+    padding: 4px 8px;
+    font-size: 14px;
+  }
+  
+  /* Dropdown del carrito */
+  .carrito-dropdown {
+    display: none; /* Oculto por defecto */
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: white;
+    color: black;
+    width: 250px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+  }
+  
+  .carrito-dropdown h2 {
+    margin-top: 0;
+  }
+  
+  #carrito-lista {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+  }
+  
+  #carrito-lista li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .total {
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    font-weight: bold;
+  }
+  

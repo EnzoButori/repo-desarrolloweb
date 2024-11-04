@@ -21,11 +21,32 @@ elementosAparecer.forEach(elemento => {
 // Estado del carrito
 const carrito = {};
 
+// Ocultar el dropdown al cargar la página
+document.addEventListener('DOMContentLoaded', function () {
+  const dropdown = document.getElementById('carrito-dropdown');
+  dropdown.style.display = 'none';  // Ocultar el dropdown al cargar la página
+});
+
 // Función para mostrar/ocultar el dropdown del carrito
 function toggleCarritoDropdown() {
   const dropdown = document.getElementById('carrito-dropdown');
-  dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+  if (dropdown.style.display === 'none' || dropdown.style.display === '') {
+    dropdown.style.display = 'block';  // Mostrar si está oculto
+  } else {
+    dropdown.style.display = 'none';   // Ocultar si está visible
+  }
 }
+
+// Cerrar el dropdown si se hace clic fuera de él
+document.addEventListener('click', function (event) {
+  const dropdown = document.getElementById('carrito-dropdown');
+  const iconoCarrito = document.querySelector('.carrito-icono');
+  
+  // Verificar si el clic fue fuera del dropdown y del icono
+  if (!dropdown.contains(event.target) && !iconoCarrito.contains(event.target)) {
+    dropdown.style.display = 'none';
+  }
+});
 
 // Función para agregar productos al carrito
 function agregarAlCarrito(nombreProducto, precio) {

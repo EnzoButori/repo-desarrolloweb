@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* header */
 .navbarbg {
   position: sticky;
@@ -455,17 +454,15 @@
 
 .carrito-container {
   position: relative;
+  height: 15px;
 }
 
-.carrito-icono {
-  font-size: 24px;
-  cursor: pointer;
+.carrito-icono img {
+  height: 20px;
   position: relative;
 }
-
-#icono-carrito {
-  width: 30px; /* Ajusta el tamaño de la imagen aquí */
-  height: auto;
+.carrito-icono img:hover {
+  transform: scale(1.1);
 }
 
 #contador-carrito {
@@ -479,11 +476,10 @@
   font-size: 14px;
 }
 
-/* Dropdown del carrito */
 .carrito-dropdown {
-  display: none; /* Oculto por defecto */
+  display: none;
   position: absolute;
-  top: 40px;
+  top: 20px;
   right: 0;
   background-color: white;
   color: black;
@@ -495,6 +491,7 @@
 }
 
 .carrito-dropdown h2 {
+  font-size: 16px;
   margin-top: 0;
 }
 

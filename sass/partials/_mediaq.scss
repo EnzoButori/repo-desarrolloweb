@@ -167,7 +167,8 @@
         }
 
         .menu {
-            
+            display: flex;
+            align-items: center;
             li:hover, li a:hover{
                 background: #ff00f2;
                 color: white;
@@ -182,9 +183,7 @@
                 background: #ff00f2;
                 color: white;
             } 
-        }
-        
-        
+        }        
     }
 
     .container-items-ap {

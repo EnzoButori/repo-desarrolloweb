@@ -752,6 +752,10 @@ label {
   .navbarbg .navimg img {
     border-radius: 50%;
   }
+  .navbarbg .menu {
+    display: flex;
+    align-items: center;
+  }
   .navbarbg .menu li:hover, .navbarbg .menu li a:hover {
     background: #ff00f2;
     color: white;

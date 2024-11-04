@@ -14,7 +14,9 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-
+document.addEventListener('DOMContentLoaded', function() {
+  const toggleButton = document.querySelector('.navbar-toggler');
+});
 
 
 // iniciamos con carrito vacio

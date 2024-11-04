@@ -36,98 +36,89 @@
                     <a class="nav-link" href="./nosotros.html">Sobre Nosotros</a>
                   </li>
                   <div class="navdp btn-group">
-                    <a href="./pages/productos.html"><button type="button" class="btn">Productos</button></a>
+                    <a href="./productos.html"><button type="button" class="btn">Productos</button></a>
                     <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
                       <span class="visually-hidden">Toggle Dropdown</span>
                     </button>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="./pages/iphones.html">Iphones</a></li>
-                      <li><a class="dropdown-item" href="./pages/macbooks.html">MacBooks</a></li>
-                      <li><a class="dropdown-item" href="./pages/auriculares.html">AirPods</a></li>
+                      <li><a class="dropdown-item" href="./iphones.html">Iphones</a></li>
+                      <li><a class="dropdown-item" href="./macbooks.html">MacBooks</a></li>
+                      <li><a class="dropdown-item" href="./auriculares.html">AirPods</a></li>
                       <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="./pages/productos.html">Todas las categorias</a></li>
+                      <li><a class="dropdown-item" href="./productos.html">Todas las categorias</a></li>
                     </ul>
                   </div>
                 </ul>
               </div>
             </div>
-            <div class="carrito-container">
-              <!-- Icono del carrito con contador -->
-              <div class="carrito-icono" onclick="toggleCarritoDropdown()">
-                <img src="../imagenes/bolsa.jpg" alt="Carrito" id="icono-carrito" />
-                <span id="contador-carrito">0</span>
-              </div>
-              <!-- Dropdown del carrito -->
-              <div id="carrito-dropdown" class="carrito-dropdown">
-                <h2>Carrito de Compras</h2>
-                <ul id="carrito-lista"></ul>
-                <div class="total">
-                  <p>Total: $<span id="precio-total">0</span></p>
-                </div>
-              </div>
+            <div class="icon-container">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-cart">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+              </svg>
+              
             </div>
           </nav>
     </header>
 
     <div class="container-items">
-      <div class="item">
+      <div data-aos="fade-up" data-aos-duration="2000" class="item">
         <figure>
           <img src="../imagenes/13.jpg" alt="...">
         </figure>
         <div class="info-product">
           <h2>Iphone 13</h2>
           <p class="price">$550</p>
-          <button onclick="agregarAlCarrito('Producto 1', 550)">Añadir al carrito</button>
+          <button onclick="agregarAlCarrito('Iphone 13', 550)">Añadir al carrito</button>
         </div>
       </div>
-      <div class="item">
+      <div data-aos="fade-up" data-aos-duration="2000" class="item">
         <figure>
           <img src="../imagenes/13Pro.jpg" alt="...">
         </figure>
         <div class="info-product">
-          <h2>Iphone 13 Pro/ProMax</h2>
+          <h2>Iphone 13 ProMax</h2>
           <p class="price">$700</p>
-          <button onclick="agregarAlCarrito('Producto 2', 650)">Añadir al carrito</button>
+          <button onclick="agregarAlCarrito('Iphone 13 ProMax', 700)">Añadir al carrito</button>
         </div>
       </div>
-      <div class="item">
+      <div data-aos="fade-up" data-aos-duration="2000" class="item">
         <figure>
           <img src="../imagenes/14s.jpg" alt="...">
         </figure>
         <div class="info-product">
           <h2>Iphone 14</h2>
           <p class="price">$650</p>
-          <button onclick="agregarAlCarrito('Producto 3', 650)">Añadir al carrito</button>
+          <button onclick="agregarAlCarrito('Iphone 14', 800)">Añadir al carrito</button>
         </div>
       </div>
-      <div class="item">
+      <div data-aos="fade-up" data-aos-duration="2000" class="item">
         <figure>
           <img src="../imagenes/14Pro.jpg" alt="...">
         </figure>
         <div class="info-product">
-          <h2>Iphone 14 Pro/ProMax</h2>
+          <h2>Iphone 14 ProMax</h2>
           <p class="price">$900</p>
-          <button onclick="agregarAlCarrito('Producto 4', 900)">Añadir al carrito</button>
+          <button onclick="agregarAlCarrito('Iphone 14 ProMax', 1000)">Añadir al carrito</button>
         </div>
       </div>
-      <div class="item">
+      <div data-aos="fade-up" data-aos-duration="2000" class="item">
         <figure>
           <img src="../imagenes/15.jpg" alt="...">
         </figure>
         <div class="info-product">
           <h2>Iphone 15</h2>
-          <p class="price">$750</p>
-          <button onclick="agregarAlCarrito('Producto 5', 750)">Añadir al carrito</button>
+          <p class="price">$850</p>
+          <button onclick="agregarAlCarrito('Iphone 15', 850)">Añadir al carrito</button>
         </div>
       </div>
-      <div class="item">
+      <div data-aos="fade-up" data-aos-duration="2000" class="item">
         <figure>
           <img src="../imagenes/15 Pro.jpg" alt="...">
         </figure>
         <div class="info-product">
-          <h2>Iphone 15 Pro/ProMax</h2>
-          <p class="price">$1100</p>
-          <button onclick="agregarAlCarrito('Producto 6', 1100)">Añadir al carrito</button>
+          <h2>Iphone 15 ProMax</h2>
+          <p class="price">$1300</p>
+          <button onclick="agregarAlCarrito('Iphone 15 ProMax', 1300)">Añadir al carrito</button>
         </div>
       </div>
     </div>

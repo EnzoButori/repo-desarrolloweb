@@ -21,8 +21,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
 const carritoDropdown = document.getElementById('container-cart-products');
 const contadorProductos = document.getElementById('contador-productos');
-const totalPagar = document.getElementsByClassName('total-pagar');
-const listaCarrito = document.getElementsByClassName('cart-product');
+const totalPagar = document.getElementsByClassName('total-pagar')[0];
+const listaCarrito = document.getElementsByClassName('cart-product')[0];
+const iconoCarrito = document.getElementById('icon-container');
 
 let carrito = {};
 
@@ -65,7 +66,7 @@ function actualizarCarrito() {
   }
 
 
-function actualizarCarrito() {
+  function actualizarCarrito() {
     listaCarrito.innerHTML = '';
     let total = 0;
     let totalItems = 0;
@@ -77,7 +78,6 @@ function actualizarCarrito() {
         return;
     }
 
-  
     for (const producto in carrito) {
         const item = carrito[producto];
         total += item.precio * item.cantidad;
@@ -105,7 +105,7 @@ function actualizarCarrito() {
     totalPagar.innerText = `$${total.toFixed(2)}`;
     contadorProductos.innerText = totalItems;
   }
-}  
+}
 
 
 function quitarDelCarrito(nombreProducto) {

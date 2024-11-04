@@ -22,8 +22,116 @@
 }
 
 .icon-container {
+  position: relative;
   width: 40px;
   height: 40px;
+}
+
+.icon-cart:hover {
+  cursor: pointer;
+}
+
+#contador-productos {
+  position: absolute;
+  top: 0;
+  right: -10px;
+  background-color: #000;
+  color: #fff;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 14px;
+}
+
+.container-cart-products {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background-color: #fff;
+  width: 400px;
+  z-index: 1;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  display: none; /* Oculto por defecto */
+}
+
+.cart-product {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  border-bottom: 1px solid #000;
+}
+
+.info-cart-product {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cantidad-productos-carrito,
+.nombre-producto,
+.precio-producto-carrito {
+  font-size: 16px;
+}
+
+.cantidad-productos-carrito {
+  color: #555;
+}
+
+.precio-producto-carrito {
+  font-weight: 700;
+}
+
+.icon-close {
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+}
+
+.icon-close:hover {
+  color: #ff00f2;
+}
+
+.cart-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.total-pagar {
+  font-size: 20px;
+  font-weight: 900;
+}
+
+/* Estilos para los botones de cantidad */
+.quantity-buttons {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.quantity-button {
+  cursor: pointer;
+  background-color: #ddd;
+  border: none;
+  border-radius: 5px;
+  width: 25px;
+  height: 25px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quantity-button:hover {
+  background-color: #ccc;
 }
 
 /* footer */

@@ -1,3 +1,22 @@
+document.addEventListener('DOMContentLoaded', () => {
+  const checkbox = document.getElementById('check');
+  const content = document.querySelector('.content');
+
+ 
+  checkbox.addEventListener('change', () => {
+    if (checkbox.checked) {
+      
+      content.style.display = 'block';
+    } else {
+      
+      content.style.display = 'none';
+    }
+  });
+});
+
+
+
+
 // iniciamos con carrito vacio
 const carrito = {};
 

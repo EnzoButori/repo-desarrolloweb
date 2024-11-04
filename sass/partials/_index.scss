@@ -39,8 +39,23 @@
         display: grid;
         place-self: center;
         width: 50%;
-        text-shadow: 1px 1px 10px #ff00ff,
+        text-shadow: 1px 1px 10px #ff00ff;
+        margin: 10px;
     }
+}
+
+#check {
+    display: none;
+}
+.content{
+    display: none;
+}
+label {
+    width: 20px;
+    display: inline-block;
+    margin: 5px;
+    cursor: pointer;
+    color: #ff00d4;
 }
 
 /* Body index*/

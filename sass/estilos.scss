@@ -1,21 +1,23 @@
-@import "./partials/header-footer";
+@use "./partials/header-footer";
 
-@import "./partials/index";
+@use "./partials/index";
 
-@import "./partials/contacto";
+@use "./partials/contacto";
 
-@import "./partials/nosotros";
+@use "./partials/nosotros";
 
-@import "./partials/servicio";
+@use "./partials/servicio";
 
-@import "./partials/productos";
+@use "./partials/productos";
 
-@import "./partials/iphones";
+@use "./partials/iphones";
 
-@import "./partials/auriculares";
+@use "./partials/auriculares";
 
-@import "./partials/macbooks";
+@use "./partials/macbooks";
 
-@import "./partials/mediaq";
+@use "./partials/mediaq";
 
-@import "./partials/keyframes";
+@use "./partials/keyframes";
+
+$primary-color: #ff00f2;

@@ -21,27 +21,9 @@
   color: white;
 }
 
-.cart-icon {
-  position: relative;
-  cursor: pointer;
-}
-
-.cart-icon img {
-  margin-right: 20px;
-  width: 50px;
-  height: 50px;
-}
-
-/* Contador del carrito */
-.cart-count {
-  position: absolute;
-  top: 1px;
-  right: 13px;
-  background-color: rgb(206, 30, 250);
-  color: white;
-  border-radius: 50%;
-  padding: 2px 6px;
-  font-size: 12px;
+.icon-container {
+  width: 40px;
+  height: 40px;
 }
 
 /* footer */
@@ -727,6 +709,27 @@
   }
 }
 @media (min-width: 700px) and (max-width: 1261px) {
+  .navbarbg {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: linear-gradient(to right, rgb(255, 255, 255), rgb(249, 139, 253));
+  }
+  .navbarbg .navimg img {
+    border-radius: 50%;
+  }
+  .navbarbg .menu li:hover, .navbarbg .menu li a:hover {
+    background: #ff00f2;
+    color: white;
+  }
+  .navbarbg .menu .navdp a {
+    text-decoration: none;
+  }
+  .navbarbg .menu .navdp:hover, .navbarbg .menu .navdp a:hover {
+    text-decoration: none;
+    background: #ff00f2;
+    color: white;
+  }
   .container-items-ap {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

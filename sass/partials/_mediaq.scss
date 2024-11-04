@@ -155,6 +155,38 @@
 }
 
 @media (min-width: 700px) and (max-width: 1261px) {
+    .navbarbg {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        background: linear-gradient(to right, rgb(255, 255, 255), rgb(249, 139, 253));
+        .navimg {
+            img {
+            border-radius: 50%;
+            }
+        }
+
+        .menu {
+            
+            li:hover, li a:hover{
+                background: #ff00f2;
+                color: white;
+            }
+            .navdp{
+                a{
+                text-decoration: none;
+                }
+            } 
+            .navdp:hover, .navdp a:hover{
+                text-decoration: none;
+                background: #ff00f2;
+                color: white;
+            } 
+        }
+        
+        
+    }
+
     .container-items-ap {
         display: grid;
         grid-template-columns: repeat(2, 1fr);

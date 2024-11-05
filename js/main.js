@@ -91,6 +91,7 @@ function actualizarCarrito() {
     return;
   }
 
+  // Recorrer el carrito y añadir cada producto a la lista
   for (const producto in carrito) {
     const item = carrito[producto];
     total += item.precio * item.cantidad;
@@ -115,8 +116,24 @@ function actualizarCarrito() {
     listaCarrito.appendChild(cartItem);
   }
 
+  
   totalPagar.innerText = `$${total.toFixed(2)}`;
   contadorProductos.innerText = totalItems;
+
+  
+  let cartTotal = document.querySelector('.cart-total');
+  if (!cartTotal) {
+    cartTotal = document.createElement('div');
+    cartTotal.classList.add('cart-total');
+    listaCarrito.appendChild(cartTotal);
+  }
+
+  
+  cartTotal.innerHTML = `
+    <h3>Total:</h3>
+    <span class="total-pagar">$${total.toFixed(2)}</span>
+  `;
 }
+
 
 window.onload = cargarCarritoDesdeLocalStorage;

@@ -56,7 +56,7 @@
 .container-cart-products {
     position: absolute;
     top: 50px;
-    right: 0;
+    right: 20px;
     background-color: #fff;
     width: 400px;
     z-index: 1;
@@ -155,27 +155,44 @@
 }
 
 .cart-total {
-    margin-top: 20px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
-    gap: 20px;
-    h3{
-        font-size: 18px;
-        font-weight: 900;
-        color: #000000;
-    }
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #333;
     .total-pagar {
-        display: flex;
-        justify-content: center;
+        display: inherit;
         font-size: 20px;
-        font-weight: 700;
-        align-items: center;
+        font-weight: 900;
         color: #000;
     }
-
+    .boton {
+        display: flex;
+        justify-content: space-between;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 15px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        h4 {
+            font-size: 16px;
+            margin: 0;
+            color: #fff;
+        }
+    }
+    .boton:hover {
+        background-color: #555;
+    }
 }
+
+
+
+
 
 
 /* footer */

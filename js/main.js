@@ -1,23 +1,12 @@
 document.addEventListener('DOMContentLoaded', () => {
   const checkbox = document.getElementById('check');
   const content = document.querySelector('.content');
-
- 
+  
+  // Mostrar y ocultar contenido del "More..."
   checkbox.addEventListener('change', () => {
-    if (checkbox.checked) {
-      
-      content.style.display = 'block';
-    } else {
-      
-      content.style.display = 'none';
-    }
+    content.style.display = checkbox.checked ? 'block' : 'none';
   });
 });
-
-document.addEventListener('DOMContentLoaded', function() {
-  const toggleButton = document.querySelector('.navbar-toggler');
-});
-
 
 const carritoDropdown = document.getElementById('container-cart-products');
 const contadorProductos = document.getElementById('contador-productos');
@@ -27,6 +16,7 @@ const iconoCarrito = document.querySelector('.icon-container');
 
 let carrito = {};
 
+// Función para cargar el carrito desde el almacenamiento local
 function cargarCarritoDesdeLocalStorage() {
   const carritoGuardado = localStorage.getItem('carrito');
   if (carritoGuardado) {
@@ -35,15 +25,23 @@ function cargarCarritoDesdeLocalStorage() {
   }
 }
 
+// Guardar el carrito en el almacenamiento local
 function guardarCarritoEnLocalStorage() {
   localStorage.setItem('carrito', JSON.stringify(carrito));
 }
 
+// Mostrar y ocultar el carrito al hacer clic en el ícono
 iconoCarrito.addEventListener('click', (event) => {
   event.stopPropagation();
   carritoDropdown.style.display = carritoDropdown.style.display === 'none' || carritoDropdown.style.display === '' ? 'block' : 'none';
 });
 
+// arreglo del cierre de carrito accidental
+carritoDropdown.addEventListener('click', (event) => {
+  event.stopPropagation();
+});
+
+// Cerrar el carrito al hacer clic fuera de él
 document.addEventListener('click', (event) => {
   if (!carritoDropdown.contains(event.target) && event.target !== iconoCarrito) {
     carritoDropdown.style.display = 'none';
@@ -116,11 +114,9 @@ function actualizarCarrito() {
     listaCarrito.appendChild(cartItem);
   }
 
-  
   totalPagar.innerText = `$${total.toFixed(2)}`;
   contadorProductos.innerText = totalItems;
 
-  
   let cartTotal = document.querySelector('.cart-total');
   if (!cartTotal) {
     cartTotal = document.createElement('div');
@@ -128,12 +124,12 @@ function actualizarCarrito() {
     listaCarrito.appendChild(cartTotal);
   }
 
-  
   cartTotal.innerHTML = `
     <h3>Total:</h3>
     <span class="total-pagar">$${total.toFixed(2)}</span>
   `;
 }
 
-
 window.onload = cargarCarritoDesdeLocalStorage;
+
+

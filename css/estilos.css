@@ -324,7 +324,12 @@ label {
   text-shadow: 0px 0px 10px #ff00d4, 0px 0px 20px #b6119a;
 }
 
-.slide {
+.productos {
+  display: grid;
+  place-self: center;
+  width: 500px;
+}
+.productos .slide {
   margin: 20px;
   display: grid;
   place-self: center;
@@ -332,15 +337,19 @@ label {
   border-radius: 24px;
   box-shadow: 7px 13px 25px #000;
 }
-.slide .imagen-carousel {
+.productos .slide .imagen-carousel {
   border-radius: 24px;
 }
-
-.slide:hover {
+.productos .slide:hover {
   transition: all 0.5s;
   transform: scale(1.1);
 }
 
+.sobre-nosotros {
+  display: grid;
+  place-self: center;
+  width: 500px;
+}
 .sobre-nosotros h2 {
   margin: 20px;
   display: grid;
@@ -361,6 +370,11 @@ label {
   transform: scale(1.1);
 }
 
+.servicio {
+  display: grid;
+  place-self: center;
+  width: 500px;
+}
 .servicio h2 {
   margin: 20px;
   display: grid;
@@ -371,10 +385,8 @@ label {
 .servicio img {
   margin: 20px;
   margin-bottom: 50px;
-  display: grid;
-  place-self: center;
-  border-radius: 24px;
   width: 500px;
+  border-radius: 24px;
   box-shadow: 7px 13px 25px #000;
 }
 .servicio img:hover {
@@ -540,6 +552,23 @@ label {
   border: none;
 }
 
+.slide {
+  margin: 20px;
+  display: grid;
+  place-self: center;
+  width: 500px;
+  border-radius: 24px;
+  box-shadow: 7px 13px 25px #000;
+}
+.slide .imagen-carousel {
+  border-radius: 24px;
+}
+
+.slide:hover {
+  transition: all 0.5s;
+  transform: scale(1.1);
+}
+
 .iphone {
   margin: 20px;
   display: grid;
@@ -605,7 +634,8 @@ label {
 .container-items .item .info-product button:hover {
   background-color: #ffffff;
   color: #000;
-  transform: scale(1.1);
+  transform: scale(1.05);
+  border-radius: 16px;
   transition: all 0.5s;
 }
 .container-items .item:hover {
@@ -696,8 +726,8 @@ label {
   width: 100%;
   height: 250px;
   border-radius: 10px 10px 0 0;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: fill;
+     object-fit: fill;
   transition: all 0.5s;
 }
 .container-items-ap .item-ap figure {
@@ -721,7 +751,8 @@ label {
 .container-items-ap .item-ap .info-product-ap button:hover {
   background-color: #ffffff;
   color: #000;
-  transform: scale(1.1);
+  transform: scale(1.05);
+  border-radius: 16px;
   transition: all 0.5s;
 }
 .container-items-ap .item-ap:hover {
@@ -739,6 +770,8 @@ label {
   margin-bottom: 50px;
 }
 .container-items-mc .item-mc {
+  place-self: center;
+  width: 800px;
   border-radius: 10px;
 }
 .container-items-mc .item-mc img {
@@ -768,7 +801,8 @@ label {
 .container-items-mc .item-mc .info-product-mc button:hover {
   background-color: #ffffff;
   color: #000;
-  transform: scale(1.1);
+  transform: scale(1.05);
+  border-radius: 16px;
   transition: all 0.5s;
 }
 .container-items-mc .item-mc:hover {

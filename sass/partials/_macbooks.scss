@@ -5,6 +5,8 @@
     margin: 20px;
     margin-bottom: 50px;
     .item-mc {
+        place-self: center;
+        width: 800px;
         border-radius: 10px;
         img {
             width: 100%;
@@ -32,9 +34,10 @@
             button:hover {
                 background-color: #ffffff;
                 color: #000;
-                transform: scale(1.1);
+                transform: scale(1.05);
+                border-radius: 16px;
                 transition: all .5s;
-              }
+            }
         }
     }
     .item-mc:hover {

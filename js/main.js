@@ -158,8 +158,11 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-  
-  if (!localStorage.getItem('popupShown')) {
+  const tiempoEspera = 60 * 60 * 1000; 
+  const tiempoUltimaInteraccion = localStorage.getItem('tiempoUltimaInteraccion');
+  const ahora = new Date().getTime();
+
+  if (!tiempoUltimaInteraccion || (ahora - tiempoUltimaInteraccion) > tiempoEspera) {
       setTimeout(function() {
           let overlay = document.createElement('div');
           overlay.classList.add('overlay');
@@ -200,16 +203,44 @@ document.addEventListener('DOMContentLoaded', () => {
               console.error('No se encontraron los elementos de contraseña o mostrar contraseña');
           }
 
-          enviarBoton.addEventListener('click', (event) => {
-              event.preventDefault();
-              document.body.removeChild(popup);
-              document.body.removeChild(overlay);
-              localStorage.setItem('popupShown', 'true'); 
+          enviarBoton.addEventListener('click', async (event) => {
+              event.preventDefault(); 
+              
+              const email = document.getElementById('email').value.trim().toLowerCase();
+              const contraseña = document.getElementById('contraseña').value.trim();
+
+              console.log(`Email ingresado: ${email}`);
+              console.log(`Contraseña ingresada: ${contraseña}`);
+
+              try {
+                  const response = await fetch('http://localhost:3000/usuarios');
+                  const usuarios = await response.json();
+
+                  console.log('Usuarios obtenidos del servidor:', usuarios);
+
+                  const usuarioEncontrado = usuarios.find(user => user.email === email && user.password === contraseña);
+
+                  console.log('Usuario encontrado:', usuarioEncontrado);
+
+                  if (usuarioEncontrado) {
+                      localStorage.setItem('popupShown', 'true'); 
+                      localStorage.setItem('tiempoUltimaInteraccion', ahora); 
+                      document.body.removeChild(popup); 
+                      document.body.removeChild(overlay); 
+                  } else {
+                      alert('Email o contraseña incorrectos');
+                  }
+              } catch (error) {
+                  console.error('Error al verificar el usuario', error);
+                  alert('Hubo un error al verificar tu información. Por favor, intenta de nuevo.');
+              }
           });
 
       }, 5000);
   }
 });
+
+
 
 
 

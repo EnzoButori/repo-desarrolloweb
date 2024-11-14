@@ -1,6 +1,7 @@
 /* header */
 
 .navbarbg {
+    display: flex;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -29,6 +30,9 @@
 }
 
 .icon-container {
+    position: absolute;
+    top: 0;
+    right: 0;
     width: 40px;
     height: 40px;
 }

@@ -17,13 +17,25 @@
         width: 75%;
     }
 
-    .slide {
-        margin: 20px;
+    .productos  {
         display: grid;
         place-self: center;
-        width: 300px;
-        border-radius: 24px;
-        box-shadow: 7px 13px 25px #000; 
+        width: 500px;
+        .slide {
+            margin: 20px;
+            display: grid;
+            place-self: center;
+            width: 300px;
+            border-radius: 24px;
+            box-shadow: 7px 13px 25px #000; 
+            .imagen-carousel {
+                border-radius: 24px;
+            }
+        }
+        .slide:hover{
+            transition: all .5s;
+            transform: scale(1.1);
+        }
     }
 
     .sobre-nosotros img {
@@ -139,22 +151,16 @@
             color: #e648be;
         }
     }
-    
-   
-    
     .location {
         width: 70%;
         .mapa {
             margin-left: 10px;
         }
     }
-    
-    
-    
-    
 }
 
 @media (min-width: 700px) and (max-width: 1261px) {
+
     .empty-cart-message {
         display: grid;
         place-self: center;
@@ -162,14 +168,14 @@
     
     .container-cart-products {
         position: absolute;
-        top: 50px; /* Puedes ajustar este valor si es necesario */
-        right: 0; /* Mantén esto para mostrarlo a la derecha */
+        top: 50px;
+        right: 0; 
         background-color: #fff;
         width: 400px;
         z-index: 1;
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
         border-radius: 10px;
-        display: none; /* Esto se puede cambiar a 'block' o 'flex' para mostrarlo por defecto */
+        display: none;
     }
     
     .cart-products-list {

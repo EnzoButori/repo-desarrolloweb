@@ -1,6 +1,6 @@
-@charset "UTF-8";
 /* header */
 .navbarbg {
+  display: flex;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -29,6 +29,9 @@
 }
 
 .icon-container {
+  position: absolute;
+  top: 0;
+  right: 0;
   width: 40px;
   height: 40px;
 }
@@ -852,13 +855,25 @@ label {
     place-self: center;
     width: 75%;
   }
-  .slide {
+  .productos {
+    display: grid;
+    place-self: center;
+    width: 500px;
+  }
+  .productos .slide {
     margin: 20px;
     display: grid;
     place-self: center;
     width: 300px;
     border-radius: 24px;
     box-shadow: 7px 13px 25px #000;
+  }
+  .productos .slide .imagen-carousel {
+    border-radius: 24px;
+  }
+  .productos .slide:hover {
+    transition: all 0.5s;
+    transform: scale(1.1);
   }
   .sobre-nosotros img {
     margin: 20px;
@@ -974,14 +989,14 @@ label {
   }
   .container-cart-products {
     position: absolute;
-    top: 50px; /* Puedes ajustar este valor si es necesario */
-    right: 0; /* Mantén esto para mostrarlo a la derecha */
+    top: 50px;
+    right: 0;
     background-color: #fff;
     width: 400px;
     z-index: 1;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
-    display: none; /* Esto se puede cambiar a 'block' o 'flex' para mostrarlo por defecto */
+    display: none;
   }
   .cart-products-list {
     max-height: 300px;

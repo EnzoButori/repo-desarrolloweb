@@ -16,6 +16,7 @@ const iconoCarrito = document.querySelector('.icon-container');
 
 let carrito = {};
 
+
 // Función para cargar el carrito desde el almacenamiento local
 function cargarCarritoDesdeLocalStorage() {
   const carritoGuardado = localStorage.getItem('carrito');
@@ -125,10 +126,37 @@ function actualizarCarrito() {
   }
 
   cartTotal.innerHTML = `
-    <h3>Total:</h3>
-    <span class="total-pagar">$${total.toFixed(2)}</span>
-  `;
+  <h3>Total:</h3>
+  <span class="total-pagar">$${total.toFixed(2)}</span>
+  <div class="finalizar-compra">
+    <button id="openModal" class="boton botonModal" type="button">
+      <div class="fondo-boton"></div>
+      <h4>Finalizar Compra</h4>
+    </button>
+  </div>
+`;
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  const openBtn = document.getElementById("openModal");
+  const closeBtn = document.getElementById("closeModal");
+  const modal = document.getElementById("modal");
+
+  
+  if (openBtn) {
+    openBtn.addEventListener("click", () => {
+      modal.classList.add("open"); 
+    });
+  }
+
+  
+  if (closeBtn) {
+    closeBtn.addEventListener("click", () => {
+      modal.classList.remove("open"); 
+    });
+  }
+});
+
 
 window.onload = cargarCarritoDesdeLocalStorage;
 

@@ -157,6 +157,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
   padding: 20px;
   font-size: 18px;
   font-weight: 700;
@@ -169,24 +170,50 @@
   color: #000;
 }
 .cart-total .boton {
-  display: flex;
-  justify-content: space-between;
-  background-color: #333;
+  position: relative;
+  background-color: #000000;
   color: #fff;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   padding: 10px 15px;
+  z-index: 2;
   cursor: pointer;
-  display: flex;
-  align-items: center;
+  overflow: hidden;
 }
 .cart-total .boton h4 {
+  position: relative;
+  z-index: 3;
   font-size: 16px;
   margin: 0;
   color: #fff;
 }
+.cart-total .fondo-boton {
+  position: absolute;
+  z-index: 1;
+  top: -8px;
+  left: -8px;
+  right: -8px;
+  bottom: -8px;
+  border-radius: 15px;
+  background-image: linear-gradient(45deg, violet, deeppink, rgb(146, 1, 146), violet, deeppink, rgb(146, 1, 146), violet);
+  background-size: 800%;
+  filter: blur(10px);
+  animation: glow 20s linear infinite;
+}
 .cart-total .boton:hover {
-  background-color: #555;
+  transition: all 0.3s;
+  transform: scale(1.07);
+}
+@keyframes glow {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
 }
 
 /* footer */
@@ -573,24 +600,24 @@ label {
   margin: 20px;
   display: grid;
   place-items: center;
-  color: #f1bae8;
-  text-shadow: 0px 0px 10px #57027f, 0px 0px 20px #57027f;
+  color: #ffffff;
+  text-shadow: 0px 0px 10px #ff00d4, 0px 0px 20px #b6119a;
 }
 
 .macbooks {
   margin: 20px;
   display: grid;
   place-items: center;
-  color: #f1bae8;
-  text-shadow: 0px 0px 10px #57027f, 0px 0px 20px #57027f;
+  color: #ffffff;
+  text-shadow: 0px 0px 10px #ff00d4, 0px 0px 20px #b6119a;
 }
 
 .airpods {
   margin: 20px;
   display: grid;
   place-items: center;
-  color: #f1bae8;
-  text-shadow: 0px 0px 10px #57027f, 0px 0px 20px #57027f;
+  color: #ffffff;
+  text-shadow: 0px 0px 10px #ff00d4, 0px 0px 20px #b6119a;
 }
 
 .container-airpods {
@@ -1069,4 +1096,59 @@ label {
     border-radius: 10px 10px 0 0;
     transition: all 0.5s;
   }
+}
+* {
+  box-sizing: border-box;
+}
+
+.botonModal {
+  background-image: linear-gradient(to right, #ff00f2, #ff1493);
+  border-radius: 20px;
+  border: 0;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  color: #fff;
+  cursor: pointer;
+  padding: 10px 25px;
+}
+
+.botonModal:active {
+  opacity: 0.8;
+}
+
+.modal {
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: all 0.3s ease-in-out;
+  z-index: -1;
+  visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal.open {
+  opacity: 1;
+  z-index: 999;
+  visibility: visible;
+}
+
+.modal-inner {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  padding: 15px 25px;
+  text-align: center;
+  width: 380px;
+}
+.modal-inner h2 {
+  margin: 0;
+}
+.modal-inner p {
+  line-height: 24px;
+  margin: 10px 0;
 }/*# sourceMappingURL=estilos.css.map */

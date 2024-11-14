@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "nombre": "Enzo",
+        "apellido": "Butori",
+        "email": "enzobutoric@gmail.com",
+        "password": "CoderHouse",
+        "contacto": "3512141703"
+    },
+    {
+        "id": 2,
+        "nombre": "Juan",
+        "apellido": "Delgado",
+        "email": "JuanDelgado@gmail.com",
+        "password": "CoderHouse",
+        "contacto": "3512356890"
+    },
+    {
+        "id": 3,
+        "nombre": "Manuel",
+        "apellido": "Tevez",
+        "email": "manutevez@gmail.com",
+        "password": "CoderHouse",
+        "contacto": "3418756611"
+    },
+    {
+        "id": 4,
+        "nombre": "Olivia",
+        "apellido": "Herrera",
+        "email": "OliviaH@gmail.com",
+        "password": "CoderHouse",
+        "contacto": "4078543123"
+    },
+    {
+        "id": 5,
+        "nombre": "Josefina",
+        "apellido": "Gutierrez",
+        "email": "JooGutii@gmail.com",
+        "password": "CoderHouse",
+        "contacto": "3703342137"
+    }
+]

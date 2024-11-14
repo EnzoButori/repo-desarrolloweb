@@ -157,6 +157,69 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+  
+  if (!localStorage.getItem('popupShown')) {
+      setTimeout(function() {
+          let overlay = document.createElement('div');
+          overlay.classList.add('overlay');
+          
+          let popup = document.createElement('div');
+          popup.classList.add('inicio-sesion');
+
+          popup.innerHTML = `
+              <h2>Iniciar Sesión</h2>
+              <input class="inicio-controls" placeholder="Email" type="email" name="email" id="email">
+              <input class="inicio-controls" placeholder="Contraseña" type="password" name="contraseña" id="contraseña">
+              <span id="show-password" class="fa fa-eye-slash" aria-hidden="true"></span>
+              <button class="inicio-boton" id="enviar" class="iniciar" type="button">
+                  <h4>Enviar</h4>
+              </button>
+          `;
+
+          document.body.appendChild(overlay);
+          document.body.appendChild(popup);
+
+          const contraseñaInput = document.getElementById('contraseña');
+          const mostrarContraseña = document.getElementById('show-password');
+          const enviarBoton = document.getElementById('enviar');
+
+          if (contraseñaInput && mostrarContraseña) {
+              mostrarContraseña.addEventListener('click', () => {
+                  if (contraseñaInput.type === 'password') {
+                      contraseñaInput.type = 'text';
+                      mostrarContraseña.classList.remove('fa-eye-slash');
+                      mostrarContraseña.classList.add('fa-eye');
+                  } else {
+                      contraseñaInput.type = 'password';
+                      mostrarContraseña.classList.remove('fa-eye');
+                      mostrarContraseña.classList.add('fa-eye-slash');
+                  }
+              });
+          } else {
+              console.error('No se encontraron los elementos de contraseña o mostrar contraseña');
+          }
+
+          enviarBoton.addEventListener('click', (event) => {
+              event.preventDefault();
+              document.body.removeChild(popup);
+              document.body.removeChild(overlay);
+              localStorage.setItem('popupShown', 'true'); 
+          });
+
+      }, 5000);
+  }
+});
+
+
+
+
+
+
+
+
+
+
 
 window.onload = cargarCarritoDesdeLocalStorage;
 

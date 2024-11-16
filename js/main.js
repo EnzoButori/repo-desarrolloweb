@@ -129,7 +129,7 @@ function actualizarCarrito() {
   <h3>Total:</h3>
   <span class="total-pagar">$${total.toFixed(2)}</span>
   <div class="finalizar-compra">
-    <button id="openModal" class="boton botonModal" type="button">
+    <button id="openModal" class="finalizar boton botonModal" type="button">
       <div class="fondo-boton"></div>
       <h4>Finalizar Compra</h4>
     </button>
@@ -178,6 +178,9 @@ document.addEventListener('DOMContentLoaded', () => {
               <button class="inicio-boton" id="enviar" class="iniciar" type="button">
                   <h4>Enviar</h4>
               </button>
+              <button class="invitado" id="invitado-boton" type="button">
+                  <h6>Continuar como invitado</h6>
+              </button>
           `;
 
           document.body.appendChild(overlay);
@@ -186,6 +189,7 @@ document.addEventListener('DOMContentLoaded', () => {
           const contraseñaInput = document.getElementById('contraseña');
           const mostrarContraseña = document.getElementById('show-password');
           const enviarBoton = document.getElementById('enviar');
+          const invitadoBoton = document.getElementById('invitado-boton');
 
           if (contraseñaInput && mostrarContraseña) {
               mostrarContraseña.addEventListener('click', () => {
@@ -209,18 +213,11 @@ document.addEventListener('DOMContentLoaded', () => {
               const email = document.getElementById('email').value.trim().toLowerCase();
               const contraseña = document.getElementById('contraseña').value.trim();
 
-              console.log(`Email ingresado: ${email}`);
-              console.log(`Contraseña ingresada: ${contraseña}`);
-
               try {
                   const response = await fetch('http://localhost:3000/usuarios');
                   const usuarios = await response.json();
 
-                  console.log('Usuarios obtenidos del servidor:', usuarios);
-
                   const usuarioEncontrado = usuarios.find(user => user.email === email && user.password === contraseña);
-
-                  console.log('Usuario encontrado:', usuarioEncontrado);
 
                   if (usuarioEncontrado) {
                       localStorage.setItem('popupShown', 'true'); 
@@ -236,20 +233,106 @@ document.addEventListener('DOMContentLoaded', () => {
               }
           });
 
+          invitadoBoton.addEventListener('click', () => {
+              localStorage.setItem('popupShown', 'true');
+              document.body.removeChild(popup); 
+              document.body.removeChild(overlay);
+          });
+
       }, 5000);
   }
 });
 
+let numeroDeOrden = 0;
 
+function crearModal() {
+  const overlay = document.createElement("div");
+  overlay.classList.add("overlay");
 
+  const modal = document.createElement("div");
+  modal.classList.add("modal");
+  modal.innerHTML = `
+    <div class="modal-content">
+      <span id="closeEmailModal" class="close">&times;</span>
+      <h2>Confirmar Pedido</h2>
+      <form id="emailForm">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <p><strong>Total del Pedido:</strong> <span id="totalPedido"></span></p>
+        <p><strong>Productos:</strong></p>
+        <ul id="listaProductos"></ul>
+        
+        <button type="button" class="terminar">Enviar Pedido</button>
+      </form>
+    </div>
+  `;
 
+  document.body.appendChild(overlay);
+  document.body.appendChild(modal);
 
+  const totalPedido = document.getElementById("totalPedido");
+  const listaProductos = document.getElementById("listaProductos");
 
+  totalPedido.textContent = `$${Object.values(carrito).reduce((acc, item) => acc + item.precio * item.cantidad, 0).toFixed(2)}`;
+  listaProductos.innerHTML = "";
 
+  for (const [nombre, datos] of Object.entries(carrito)) {
+    const li = document.createElement("li");
+    li.textContent = `${datos.cantidad}x ${nombre} ($${datos.precio.toFixed(2)} c/u)`;
+    listaProductos.appendChild(li);
+  }
 
+  document.getElementById("closeEmailModal").addEventListener("click", () => {
+    document.body.removeChild(overlay);
+    document.body.removeChild(modal);
+  });
+ 
+  document.querySelector(".terminar").addEventListener("click", async () => {
+    const nombre = document.getElementById("nombre").value.trim();
+    const email = document.getElementById("email").value.trim();
 
+    if (!nombre || !email) {
+      alert("Por favor, completa todos los campos.");
+      return;
+    }
 
+    const params = {
+      numeroOrden: numeroDeOrden++,
+      nombreCliente: nombre,
+      correoCliente: email,
+      productos: Object.entries(carrito)
+        .map(([nombre, datos]) => `${datos.cantidad}x ${nombre} ($${datos.precio.toFixed(2)} c/u)`)
+        .join("\n"),
+      total: `$${Object.values(carrito).reduce((acc, item) => acc + item.precio * item.cantidad, 0).toFixed(2)}`
+    };
 
+    try {
+      const response = await emailjs.send("service_ts8cc9h", "template_cnvq1or", params, "eZAFjxJPXInJm7B3t");
+
+      alert("Pedido enviado correctamente.");
+      console.log("Correo enviado:", response);
+
+      carrito = {};
+      actualizarCarrito();
+
+      document.body.removeChild(overlay);
+      document.body.removeChild(modal);
+    } catch (error) {
+      console.error("Error al enviar el correo:", error);
+      alert("Hubo un error al enviar tu pedido. Por favor, intenta de nuevo.");
+    }
+  });
+}
+
+document.addEventListener("click", (e) => {
+  if (e.target.classList.contains("finalizar")) {
+    crearModal();
+  }
+});
 
 
 window.onload = cargarCarritoDesdeLocalStorage;

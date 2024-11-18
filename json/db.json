@@ -1,44 +1,69 @@
 {
-    "usuarios": [
+    "productos": [
             {
                 "id": 1,
-                "nombre": "Enzo",
-                "apellido": "Butori",
-                "email": "enzobutoric@gmail.com",
-                "password": "CoderHouse",
-                "contacto": "3512141703"
+                "modelo": "Iphone 13",
+                "precio": "550"
             },
             {
                 "id": 2,
-                "nombre": "Juan",
-                "apellido": "Delgado",
-                "email": "JuanDelgado@gmail.com",
-                "password": "CoderHouse",
-                "contacto": "3512356890"
+                "modelo": "Iphone 13 ProMax",
+                "precio": "700"
             },
             {
                 "id": 3,
-                "nombre": "Manuel",
-                "apellido": "Tevez",
-                "email": "manutevez@gmail.com",
-                "password": "CoderHouse",
-                "contacto": "3418756611"
+                "modelo": "Iphone 14",
+                "precio": "800"
             },
             {
                 "id": 4,
-                "nombre": "Olivia",
-                "apellido": "Herrera",
-                "email": "OliviaH@gmail.com",
-                "password": "CoderHouse",
-                "contacto": "4078543123"
+                "modelo": "Iphone 14 ProMax",
+                "precio": "1000"
             },
             {
                 "id": 5,
-                "nombre": "Josefina",
-                "apellido": "Gutierrez",
-                "email": "JooGutii@gmail.com",
-                "password": "CoderHouse",
-                "contacto": "3703342137"
+                "modelo": "Iphone 15",
+                "precio": "900"
+            },
+            {
+                "id": 6,
+                "modelo": "Iphone 15 ProMax",
+                "precio": "1300"
+            },
+            {
+                "id": 7,
+                "modelo": "MacBook Air 13",
+                "precio": "1099"
+            },
+            {
+                "id": 8,
+                "modelo": "MacBook Air 15",
+                "precio": "1199"
+            },
+            {
+                "id": 9,
+                "modelo": "MacBook Pro 14",
+                "precio": "1699"
+            },
+            {
+                "id": 10,
+                "modelo": "MacBook Pro 16",
+                "precio": "2199"
+            },
+            {
+                "id": 11,
+                "modelo": "AirPods",
+                "precio": "100"
+            },
+            {
+                "id": 12,
+                "modelo": "AirPods Pro",
+                "precio": "359"
+            },
+            {
+                "id": 13,
+                "modelo": "AirPods Max",
+                "precio": "799"
             }
         ]
 }   

@@ -23,6 +23,22 @@
     }
 }
 
+.carrito-temporizador {
+    display: flex;
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    width: 200px;
+    p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+    }
+    
+}
+
+
 .empty-cart-message {
     display: flex;
     justify-content: center;

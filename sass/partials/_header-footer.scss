@@ -1,25 +1,39 @@
 /* header */
 
-.navbarbg {
+.header {
     display: flex;
+    align-items: center;
     position: sticky;
     top: 0;
     z-index: 1000;
     background: linear-gradient(to right, rgb(255, 255, 255), rgb(249, 139, 253));
-    .navimg img {
-        border-radius: 50%;
+    height: 80px;
+    .marca {
+        display: flex;
+        align-items: center;
+        margin: 15px;
     }
+    .navimg {
+        img{
+            border-radius: 50%;
+        }
+    }
+    li {
+        text-decoration: none;
+        list-style: none;
+        display: inline-block;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin: 10px;
+        width: 120px;
+        height: 30px;
+    }
+
     li:hover, li a:hover{
         background: #ff00f2;
         color: white;
-    }
-    .navdp a{
-        text-decoration: none;
-    }
-    .navdp:hover, .navdp a:hover{
-        text-decoration: none;
-        background: #ff00f2;
-        color: white;
+        border-radius: 12px;
     }
 }
 

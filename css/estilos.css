@@ -1,25 +1,36 @@
 /* header */
-.navbarbg {
+.header {
   display: flex;
+  align-items: center;
   position: sticky;
   top: 0;
   z-index: 1000;
   background: linear-gradient(to right, rgb(255, 255, 255), rgb(249, 139, 253));
+  height: 80px;
 }
-.navbarbg .navimg img {
+.header .marca {
+  display: flex;
+  align-items: center;
+  margin: 15px;
+}
+.header .navimg img {
   border-radius: 50%;
 }
-.navbarbg li:hover, .navbarbg li a:hover {
+.header li {
+  text-decoration: none;
+  list-style: none;
+  display: inline-block;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin: 10px;
+  width: 120px;
+  height: 30px;
+}
+.header li:hover, .header li a:hover {
   background: #ff00f2;
   color: white;
-}
-.navbarbg .navdp a {
-  text-decoration: none;
-}
-.navbarbg .navdp:hover, .navbarbg .navdp a:hover {
-  text-decoration: none;
-  background: #ff00f2;
-  color: white;
+  border-radius: 12px;
 }
 
 .carrito-temporizador {
@@ -997,6 +1008,62 @@ label {
   }
 }
 @media (min-width: 700px) and (max-width: 1261px) {
+  .header {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: linear-gradient(to right, rgb(255, 255, 255), rgb(249, 139, 253));
+    height: 140px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .header .marca {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 15px;
+  }
+  .header .navimg {
+    margin: 10px;
+  }
+  .header .navimg img {
+    border-radius: 50%;
+  }
+  .header li {
+    text-decoration: none;
+    list-style: none;
+    display: inline-block;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 10px;
+    width: 120px;
+    height: 30px;
+  }
+  .header li:hover, .header li a:hover {
+    background: #ff00f2;
+    color: white;
+    border-radius: 12px;
+  }
+  .carrito-temporizador {
+    display: flex;
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    width: 200px;
+  }
+  .carrito-temporizador p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+  }
+  .icon-container {
+    top: 20px;
+    right: 10px;
+  }
   .empty-cart-message {
     display: grid;
     place-self: center;

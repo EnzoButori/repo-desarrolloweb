@@ -12,9 +12,19 @@
   display: flex;
   align-items: center;
   margin: 15px;
+  font-size: 20px;
+}
+.header .navimg {
+  margin: 10px;
 }
 .header .navimg img {
   border-radius: 50%;
+}
+.header .navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
 }
 .header li {
   text-decoration: none;
@@ -55,8 +65,8 @@
 
 .icon-container {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 15px;
+  right: 15px;
   width: 40px;
   height: 40px;
 }
@@ -1010,22 +1020,23 @@ label {
 @media (min-width: 700px) and (max-width: 1261px) {
   .header {
     display: flex;
+    flex-direction: column;
     align-items: center;
     position: sticky;
     top: 0;
     z-index: 1000;
     background: linear-gradient(to right, rgb(255, 255, 255), rgb(249, 139, 253));
     height: 140px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
   }
   .header .marca {
+    width: 200px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     margin: 15px;
   }
   .header .navimg {
+    width: 50px;
     margin: 10px;
   }
   .header .navimg img {

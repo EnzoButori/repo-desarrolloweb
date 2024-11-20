@@ -1,10 +1,16 @@
+.main {
+    display: grid;
+    place-self: center;
+    width: 700px;
+    background-color: rgba(255, 255, 255, 0.329);
+    backdrop-filter: blur(8px);
+}
+
+
 .datos-de-contacto {
     margin: 20px;
     display: grid;
     place-self: center;
-    h4{
-        font-size: 18px;
-    }
     .email-compra{
         width: 400px;
         height: 50px;
@@ -19,11 +25,77 @@
             margin-left: 5px;
             margin-top: 18px;
             font-size: 14px;
-            color: #ffffff;
+            color: #000000;
 
         }
     }
 
+}
+
+h4{
+    font-size: 24px;
+}
+
+.envio-sucursal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    .check-sucursal{
+        margin: 10px;
+        width: 15px;
+        height: 15px;
+    }
+    .sucursales{
+        width: 370px;
+        height: 30px;
+    }
+}
+
+.direccion {
+    width: 400px;
+    height: 30px;
+}
+
+.pago{
+    margin: 20px;
+    display: grid;
+    place-self: center;
+    h6{
+        font-size: 14px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .input-pago{
+        width: 400px;
+        height: 50px;
+    }
+    .input-corto{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        height: 50px;
+    }
+}
+
+.Enviar{
+    width: 400px;
+    display: grid;
+    place-self: center;
+    background: #305fe0;
+    border: none;
+    padding: 12px;
+    margin: 16px 0;
+    font-size: 16px;
+    border-radius: 16px;
+    margin-bottom: 127px;
+}
+.Enviar:hover{
+    background-color: #54cfff;
+    color: #000000;
+    border: none;
+    transition: all .2s;
 }
 
 .contenedor-productos {
@@ -120,8 +192,7 @@
       height: 50px;
       margin: 0 auto;
       fill: #4caf50; 
-    }
-    button {
+    }button {
         margin-top: 1.5rem;
         padding: 0.8rem 1.2rem;
         background-color: #4caf50;
@@ -150,22 +221,6 @@
             width: 100%;
             margin-top: 10px;
             margin-bottom: 10px;
-        }
-        .Enviar{
-            width: 100%;
-            background: #61a2ce;
-            border: none;
-            padding: 12px;
-            margin: 16px 0;
-            font-size: 16px;
-            border-radius: 16px;
-            margin-bottom: 127px;
-        }
-        .Enviar:hover{
-            background-color: #54cfff;
-            color: #000000;
-            border: none;
-            transition: all .2s;
         }
     }
 }

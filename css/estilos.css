@@ -1282,13 +1282,19 @@ label {
     transition: all 0.5s;
   }
 }
+.main {
+  display: grid;
+  place-self: center;
+  width: 700px;
+  background-color: rgba(255, 255, 255, 0.329);
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+}
+
 .datos-de-contacto {
   margin: 20px;
   display: grid;
   place-self: center;
-}
-.datos-de-contacto h4 {
-  font-size: 18px;
 }
 .datos-de-contacto .email-compra {
   width: 400px;
@@ -1305,7 +1311,74 @@ label {
   margin-left: 5px;
   margin-top: 18px;
   font-size: 14px;
-  color: #ffffff;
+  color: #000000;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+.envio-sucursal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+}
+.envio-sucursal .check-sucursal {
+  margin: 10px;
+  width: 15px;
+  height: 15px;
+}
+.envio-sucursal .sucursales {
+  width: 370px;
+  height: 30px;
+}
+
+.direccion {
+  width: 400px;
+  height: 30px;
+}
+
+.pago {
+  margin: 20px;
+  display: grid;
+  place-self: center;
+}
+.pago h6 {
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.pago .input-pago {
+  width: 400px;
+  height: 50px;
+}
+.pago .input-corto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+}
+
+.Enviar {
+  width: 400px;
+  display: grid;
+  place-self: center;
+  background: #305fe0;
+  border: none;
+  padding: 12px;
+  margin: 16px 0;
+  font-size: 16px;
+  border-radius: 16px;
+  margin-bottom: 127px;
+}
+
+.Enviar:hover {
+  background-color: #54cfff;
+  color: #000000;
+  border: none;
+  transition: all 0.2s;
 }
 
 .contenedor-productos {
@@ -1433,20 +1506,4 @@ label {
   width: 100%;
   margin-top: 10px;
   margin-bottom: 10px;
-}
-.entrega form .Enviar {
-  width: 100%;
-  background: #61a2ce;
-  border: none;
-  padding: 12px;
-  margin: 16px 0;
-  font-size: 16px;
-  border-radius: 16px;
-  margin-bottom: 127px;
-}
-.entrega form .Enviar:hover {
-  background-color: #54cfff;
-  color: #000000;
-  border: none;
-  transition: all 0.2s;
 }/*# sourceMappingURL=estilos.css.map */

@@ -1,0 +1,171 @@
+.datos-de-contacto {
+    margin: 20px;
+    display: grid;
+    place-self: center;
+    h4{
+        font-size: 18px;
+    }
+    .email-compra{
+        width: 400px;
+        height: 50px;
+    }
+    .check-mail{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5px;
+        p{
+            display: flex;
+            margin-left: 5px;
+            margin-top: 18px;
+            font-size: 14px;
+            color: #ffffff;
+
+        }
+    }
+
+}
+
+.contenedor-productos {
+    width: 400px;
+    margin: 20px;
+    display: grid;
+    place-self: center;
+}
+
+.productos-fin {
+    background-color: #fff;
+    padding: 15px;
+    margin: 10px;
+    width: 400px;
+    display: grid;
+    place-self: center;
+    border-radius: 12px;
+    .fin-text{
+        color: #000;
+    }
+    .info-producto-fin {
+        display: flex;
+        justify-content: space-between;
+        flex: 0.8;
+        align-items: center;
+    }
+    .precio-producto-carrito-fin {
+        font-weight: 700;
+        color: #000;
+        min-width: 50px;
+        text-align: right;
+        align-items: center;
+    }
+    .nombre-producto-fin {
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        font-size: 14px;
+        color: #333;
+        justify-content: space-between;
+    }
+    .icon-cancelar{
+        cursor: pointer;
+        align-items: center;
+        width: 25px;
+        height: 25px;
+        color: #333;
+    }
+    .icon-cancelar:hover {
+        color: #00d9ff;
+    }
+}
+
+.con-comprando{
+    display: grid;
+    place-self: center;
+    h6{
+        color: #ffffff;
+        text-decoration: underline;
+    }
+}
+
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); 
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(4px); 
+}
+  
+  
+.popupFin {
+    background-color: #fff; 
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); 
+    z-index: 10000; 
+    max-width: 90%; 
+    width: 400px;
+    text-align: center;
+    h4 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: #333;
+    }
+    svg {
+      width: 50px;
+      height: 50px;
+      margin: 0 auto;
+      fill: #4caf50; 
+    }
+    button {
+        margin-top: 1.5rem;
+        padding: 0.8rem 1.2rem;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1rem;
+        transition: background-color 0.3s ease;
+      
+        &:hover {
+          background-color: #45a049;
+        }
+    }
+}
+
+.entrega {
+    margin: 20px;
+    display: grid;
+    place-self: center;
+    form {
+        width: 400px;
+        display: grid;
+        .input-entrega{
+            height: 50px;
+            width: 100%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .Enviar{
+            width: 100%;
+            background: #61a2ce;
+            border: none;
+            padding: 12px;
+            margin: 16px 0;
+            font-size: 16px;
+            border-radius: 16px;
+            margin-bottom: 127px;
+        }
+        .Enviar:hover{
+            background-color: #54cfff;
+            color: #000000;
+            border: none;
+            transition: all .2s;
+        }
+    }
+}

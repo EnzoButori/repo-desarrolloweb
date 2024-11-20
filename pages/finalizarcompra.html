@@ -13,7 +13,7 @@
     <link class="icono" rel="icon" href="../Imagenes/DELTAIcon.png">
     <title>Finalizar Compra</title>
 </head>
-<body>
+<body class="body">
     <header class="header">
         <div class="marca">
           <a class="navimg" href="../index.html">
@@ -80,6 +80,45 @@
         </header>
 </body>
 
+<main>
+    <div class="datos-de-contacto">
+        <h4>Datos De Contacto:</h4>
+        <input placeholder="Email" class="email-compra" type="email" name="email" id="email-compra">
+        <div class="check-mail">
+            <input type="checkbox" name="recibir-ofertas" id="recibir-ofertas">
+            <p>Quiero recibir ofertas y novedades por mail</p> 
+        </div>
+    </div>
+
+    <div class="contenedor-productos">
+        <h3>Productos del carrito:</h3>
+    </div>
+    <div class="productos-fin">
+           
+    </div>
+    <div class="con-comprando">
+        <a href="./productos.html">
+            <h6>Continuar Comprando</h3>
+        </a>
+    </div>
+
+    <div class="entrega">
+        <h4>Entrega:</h4>
+        <form action="/submit" method="post">
+            <select class="input-entrega" name="Pais" id="Pais">
+                <option value="Argentina">Argentina</option>
+                <option value="Brasil">Brasil</option>
+                <option value="Chile">Chile</option>
+                <option value="Uruguay">Uruguay</option>
+            </select>
+            <input placeholder="Código Postal" class="input-entrega" type="text" name="cp" id="cp">
+            <button class="Enviar" type="button">
+                <h5>Finalizar Compra</h4>
+            </button>
+        </form>
+    </div>
+</main>
+
 <footer class="footer">
     <div class="cont-footer">
       <a href="./contacto.html">
@@ -104,7 +143,8 @@
         <p>EnzoButori</p>
       </a>
     </article>
-  </footer>
+</footer>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>

@@ -5,7 +5,7 @@
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: linear-gradient(to right, rgb(255, 255, 255), rgb(249, 139, 253));
+  background: linear-gradient(to right, #3841c7, #afafaf);
   height: 80px;
 }
 .header .marca {
@@ -13,6 +13,7 @@
   align-items: center;
   margin: 15px;
   font-size: 20px;
+  color: #fff;
 }
 .header .navimg {
   margin: 10px;
@@ -27,6 +28,7 @@
   margin-top: 16px;
 }
 .header li {
+  color: #fff;
   text-decoration: none;
   list-style: none;
   display: inline-block;
@@ -38,9 +40,17 @@
   height: 30px;
 }
 .header li:hover, .header li a:hover {
-  background: #ff00f2;
-  color: white;
+  background: #80b2eb;
   border-radius: 12px;
+}
+.header .menu-btn {
+  position: relative;
+  display: none;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: #616161;
+  cursor: pointer;
 }
 
 .carrito-temporizador {
@@ -233,7 +243,7 @@
   right: -8px;
   bottom: -8px;
   border-radius: 15px;
-  background-image: linear-gradient(45deg, violet, deeppink, rgb(146, 1, 146), violet, deeppink, rgb(146, 1, 146), violet);
+  background-image: linear-gradient(45deg, #7bc4ee, #1d5ca3, #2731bb, #7bc4ee, #1d5ca3, #2731bb, #7bc4ee);
   background-size: 800%;
   filter: blur(10px);
   animation: glow 20s linear infinite;
@@ -321,7 +331,7 @@
 /* Linea separadora */
 .linea {
   margin: 5px;
-  background-color: #ff00ff;
+  background-color: #4f69f8;
   height: 5px;
 }
 
@@ -329,7 +339,7 @@
 .body {
   font-family: "Oxanium", sans-serif;
   font-optical-sizing: auto;
-  background-image: linear-gradient(to top, #cd9cf2 0%, #f6f3ff 100%);
+  background-image: linear-gradient(to top, #3841c7 0%, #c9c9c9 100%);
 }
 
 /* Banner */
@@ -339,7 +349,7 @@
 }
 .introbanner h1 {
   color: #ffffff;
-  text-shadow: 0px 0px 10px #ff00d4, 0px 0px 20px #ff00d4;
+  text-shadow: 0px 0px 10px #1f5a9e, 0px 0px 20px #0c2f7c;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -353,14 +363,14 @@
   display: grid;
   place-items: center;
   color: #ffffff;
-  text-shadow: 0px 0px 10px #ff00d4, 0px 0px 20px #b6119a;
+  text-shadow: 0px 0px 10px #1f5a9e, 0px 0px 20px #0c2f7c;
 }
 .intro .parrafo {
   color: #000000;
   display: grid;
   place-self: center;
   width: 50%;
-  text-shadow: 1px 1px 10px #ff00ff;
+  text-shadow: 1px 1px 10px #40aadb;
   margin: 10px;
 }
 
@@ -377,7 +387,8 @@ label {
   display: inline-block;
   margin: 5px;
   cursor: pointer;
-  color: #ff00d4;
+  color: #ffffff;
+  text-shadow: 0px 0px 10px #1f5a9e, 0px 0px 20px #0c2f7c;
 }
 
 /* Body index*/
@@ -386,7 +397,7 @@ label {
   display: grid;
   place-items: center;
   color: #ffffff;
-  text-shadow: 0px 0px 10px #ff00d4, 0px 0px 20px #b6119a;
+  text-shadow: 0px 0px 10px #1f5a9e, 0px 0px 20px #0c2f7c;
 }
 
 .productos {
@@ -420,7 +431,7 @@ label {
   display: grid;
   place-items: center;
   color: #ffffff;
-  text-shadow: 0px 0px 10px #ff00d4, 0px 0px 20px #b6119a;
+  text-shadow: 0px 0px 10px #1f5a9e, 0px 0px 20px #0c2f7c;
 }
 .sobre-nosotros img {
   margin: 20px;
@@ -445,7 +456,7 @@ label {
   display: grid;
   place-items: center;
   color: #ffffff;
-  text-shadow: 0px 0px 10px #ff00d4, 0px 0px 20px #b6119a;
+  text-shadow: 0px 0px 10px #1f5a9e, 0px 0px 20px #0c2f7c;
 }
 .servicio img {
   margin: 20px;
@@ -462,12 +473,13 @@ label {
 /* Formulario */
 .forms {
   width: 400px;
-  background-color: #57027f;
+  background-color: #4046a1;
   padding: 30px;
   margin: auto;
   margin-top: 100px;
   border-radius: 16px;
-  color: white;
+  color: #abe8f7;
+  text-shadow: 0px 0px 10px #1f5a9e, 0px 0px 20px #0c2f7c;
   box-shadow: 7px 13px 37px #000;
 }
 .forms h4 {
@@ -476,7 +488,7 @@ label {
 }
 .forms .botons {
   width: 100%;
-  background: rgb(226, 64, 187);
+  background: #538bb1;
   border: none;
   padding: 12px;
   margin: 16px 0;
@@ -487,7 +499,7 @@ label {
 /* inputs */
 .controls {
   width: 100%;
-  background: #ddbaf5;
+  background: #a1bfe6;
   padding: 10px;
   border-radius: 16px;
   margin-bottom: 16px;
@@ -498,7 +510,7 @@ label {
 /* consulta telefonica */
 .wpp {
   width: 400px;
-  background-color: #57027f;
+  background-color: #4046a1;
   padding: 30px;
   margin: auto;
   margin-top: 100px;
@@ -509,17 +521,21 @@ label {
 }
 .wpp .botons {
   width: 100%;
-  background: rgb(226, 64, 187);
+  background: #538bb1;
   border: none;
   padding: 12px;
   margin: 16px 0;
   font-size: 16px;
   border-radius: 16px;
 }
+.wpp h4 {
+  color: #abe8f7;
+  text-shadow: 0px 0px 10px #1f5a9e, 0px 0px 20px #0c2f7c;
+}
 
 .botons:hover {
-  background-color: rgb(207, 84, 255);
-  color: #ffffff;
+  background-color: #54cfff;
+  color: #000000;
   border: none;
   transition: all 0.2s;
   transform: scale(1.1);
@@ -527,7 +543,7 @@ label {
 
 .About {
   width: 500px;
-  background-color: #57027f;
+  background-color: #4046a1;
   padding: 30px;
   margin: auto;
   margin-top: 100px;
@@ -538,14 +554,15 @@ label {
 .About h4 {
   font-size: 26px;
   margin-bottom: 15px;
-  color: #e648be;
+  color: #abe8f7;
+  text-shadow: 0px 0px 10px #1f5a9e, 0px 0px 20px #0c2f7c;
 }
 
 .location {
   position: relative;
   width: 500px;
   height: 400px;
-  background-color: #57027f;
+  background-color: #4046a1;
   padding: 30px;
   margin: auto;
   margin-top: 100px;
@@ -557,7 +574,8 @@ label {
 .location h4 {
   font-size: 26px;
   margin-bottom: 15px;
-  color: #e648be;
+  color: #abe8f7;
+  text-shadow: 0px 0px 10px #1f5a9e, 0px 0px 20px #0c2f7c;
 }
 .location .mapa {
   position: absolute;
@@ -569,7 +587,7 @@ label {
 
 .sop {
   width: 500px;
-  background-color: #57027f;
+  background-color: #4046a1;
   padding: 30px;
   margin: auto;
   margin-top: 100px;
@@ -580,12 +598,13 @@ label {
 .sop h3 {
   font-size: 26px;
   margin-bottom: 15px;
-  color: #e648be;
+  color: #abe8f7;
+  text-shadow: 0px 0px 10px #1f5a9e, 0px 0px 20px #0c2f7c;
 }
 
 .presupuesto {
   width: 500px;
-  background-color: #57027f;
+  background-color: #4046a1;
   padding: 30px;
   margin: auto;
   margin-top: 100px;
@@ -597,14 +616,15 @@ label {
 .presupuesto h3 {
   font-size: 26px;
   margin-bottom: 15px;
-  color: #e648be;
+  color: #abe8f7;
+  text-shadow: 0px 0px 10px #1f5a9e, 0px 0px 20px #0c2f7c;
 }
 .presupuesto p {
   margin-bottom: 10px;
 }
 .presupuesto .botons {
   width: 100%;
-  background: rgb(226, 64, 187);
+  background: #538bb1;
   border: none;
   padding: 12px;
   margin: 16px 0;
@@ -612,9 +632,11 @@ label {
   border-radius: 16px;
 }
 .presupuesto .botons:hover {
-  background-color: rgb(207, 84, 255);
-  color: #ffffff;
+  background-color: #54cfff;
+  color: #000000;
   border: none;
+  transition: all 0.2s;
+  transform: scale(1.1);
 }
 
 .slide {
@@ -639,7 +661,7 @@ label {
   display: grid;
   place-items: center;
   color: #ffffff;
-  text-shadow: 0px 0px 10px #ff00d4, 0px 0px 20px #b6119a;
+  text-shadow: 0px 0px 10px #1f5a9e, 0px 0px 20px #0c2f7c;
 }
 
 .macbooks {
@@ -647,7 +669,7 @@ label {
   display: grid;
   place-items: center;
   color: #ffffff;
-  text-shadow: 0px 0px 10px #ff00d4, 0px 0px 20px #b6119a;
+  text-shadow: 0px 0px 10px #1f5a9e, 0px 0px 20px #0c2f7c;
 }
 
 .airpods {
@@ -655,7 +677,7 @@ label {
   display: grid;
   place-items: center;
   color: #ffffff;
-  text-shadow: 0px 0px 10px #ff00d4, 0px 0px 20px #b6119a;
+  text-shadow: 0px 0px 10px #1f5a9e, 0px 0px 20px #0c2f7c;
 }
 
 .container-airpods {
@@ -878,6 +900,47 @@ label {
 }
 
 @media (max-width: 699px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: linear-gradient(to right, rgb(255, 255, 255), rgb(249, 139, 253));
+    height: 140px;
+  }
+  .header .marca {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 10px;
+  }
+  .header .navimg {
+    width: 50px;
+    margin: 10px;
+  }
+  .header .navimg img {
+    border-radius: 50%;
+  }
+  .header li {
+    text-decoration: none;
+    list-style: none;
+    display: inline-block;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 10px;
+    width: auto;
+    height: auto;
+    font-size: auto;
+  }
+  .header li:hover, .header li a:hover {
+    background: #ff00f2;
+    color: white;
+    border-radius: 12px;
+  }
   .intro h2 {
     display: grid;
     place-items: center;
@@ -1033,7 +1096,7 @@ label {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    margin: 15px;
+    margin: 10px;
   }
   .header .navimg {
     width: 50px;
@@ -1050,8 +1113,9 @@ label {
     text-align: center;
     align-items: center;
     margin: 10px;
-    width: 120px;
-    height: 30px;
+    width: auto;
+    height: auto;
+    font-size: auto;
   }
   .header li:hover, .header li a:hover {
     background: #ff00f2;
@@ -1168,6 +1232,20 @@ label {
     font-size: 20px;
     font-weight: 900;
     color: #000;
+  }
+  .intro h2 {
+    display: grid;
+    place-items: center;
+    color: #ffffff;
+    text-shadow: 0px 0px 10px #ff00d4, 0px 0px 20px #b6119a;
+  }
+  .intro .parrafo {
+    color: #000000;
+    display: grid;
+    place-self: center;
+    width: 50%;
+    text-shadow: 1px 1px 10px #ff00ff;
+    margin: 10px;
   }
   .container-items-ap {
     display: grid;

@@ -2,12 +2,14 @@
 
 .forms {
     width: 400px;
-    background-color: #57027f;
+    background-color: #4046a1;
     padding: 30px;
     margin: auto;
     margin-top: 100px;
     border-radius: 16px;
-    color: white;
+    color: #abe8f7;
+        text-shadow: 0px 0px 10px #1f5a9e,
+                     0px 0px 20px #0c2f7c;
     box-shadow: 7px 13px 37px #000;
     h4 {
         font-size: 22px;
@@ -15,7 +17,7 @@
     }
     .botons {
         width: 100%;
-        background: rgb(226, 64, 187);
+        background: #538bb1;
         border: none;
         padding: 12px;
         margin: 16px 0;
@@ -29,7 +31,7 @@
 
 .controls {
     width: 100%;
-    background: #ddbaf5;
+    background: #a1bfe6;
     padding: 10px;
     border-radius: 16px;
     margin-bottom: 16px;
@@ -41,7 +43,7 @@
 
 .wpp {
     width: 400px;
-    background-color: #57027f;
+    background-color: #4046a1;
     padding: 30px;
     margin: auto;
     margin-top: 100px;
@@ -51,18 +53,23 @@
     box-shadow: 7px 13px 37px #000;
     .botons {
         width: 100%;
-        background: rgb(226, 64, 187);
+        background: #538bb1;
         border: none;
         padding: 12px;
         margin: 16px 0;
         font-size: 16px;
         border-radius: 16px;
     }
+    h4{
+        color: #abe8f7;
+        text-shadow: 0px 0px 10px #1f5a9e,
+                     0px 0px 20px #0c2f7c;
+    }
 } 
 
 .botons:hover{
-    background-color: rgb(207, 84, 255);
-    color: #ffffff;
+    background-color: #54cfff;
+    color: #000000;
     border: none;
     transition: all .2s;
     transform: scale(1.1);

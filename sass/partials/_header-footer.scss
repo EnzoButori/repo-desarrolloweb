@@ -6,13 +6,14 @@
     position: sticky;
     top: 0;
     z-index: 1000;
-    background: linear-gradient(to right, rgb(255, 255, 255), rgb(249, 139, 253));
+    background: linear-gradient(to right, #3841c7, #afafaf);
     height: 80px;
     .marca {
         display: flex;
         align-items: center;
         margin: 15px;
         font-size: 20px;
+        color: #fff;
     }
     .navimg {
         margin: 10px;
@@ -27,6 +28,7 @@
         margin-top: 16px;
     }
     li {
+        color: #fff;
         text-decoration: none;
         list-style: none;
         display: inline-block;
@@ -39,10 +41,19 @@
     }
 
     li:hover, li a:hover{
-        background: #ff00f2;
-        color: white;
+        background: #80b2eb;
         border-radius: 12px;
     }
+
+    .menu-btn {
+        position: relative;
+        display: none;
+        width: 40px;
+        height: 40px;
+        background-color: transparent;
+        border: #616161;
+        cursor: pointer;
+      }
 }
 
 .carrito-temporizador {
@@ -239,8 +250,8 @@
         border-radius: 15px;
         background-image: linear-gradient(
             45deg,
-            violet, deeppink, rgb(146, 1, 146), 
-            violet, deeppink, rgb(146, 1, 146), violet
+            #7bc4ee, #1d5ca3, #2731bb, 
+            #7bc4ee, #1d5ca3, #2731bb, #7bc4ee
         );
         background-size: 800%;
         filter: blur(10px);
@@ -333,6 +344,6 @@
 
 .linea {
     margin: 5px;
-    background-color: #ff00ff;
+    background-color: #4f69f8;
     height: 5px;
 }

@@ -3,7 +3,7 @@
 .body {
     font-family: "Oxanium", sans-serif;
     font-optical-sizing: auto;
-    background-image: linear-gradient(to top, #cd9cf2 0%, #f6f3ff 100%);
+    background-image: linear-gradient(to top, #3841c7 0%, #c9c9c9 100%);
 }
 
 /* Banner */
@@ -13,8 +13,8 @@
     position: relative;
     h1 {
         color: #ffffff;
-        text-shadow: 0px 0px 10px #ff00d4,
-                     0px 0px 20px #ff00d4;
+        text-shadow: 0px 0px 10px #1f5a9e,
+                     0px 0px 20px #0c2f7c;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -31,15 +31,15 @@
         display: grid;
         place-items: center;
         color: #ffffff;
-        text-shadow: 0px 0px 10px #ff00d4,
-                     0px 0px 20px #b6119a;
+        text-shadow: 0px 0px 10px #1f5a9e,
+                     0px 0px 20px #0c2f7c;
     }
     .parrafo {
         color: #000000;
         display: grid;
         place-self: center;
         width: 50%;
-        text-shadow: 1px 1px 10px #ff00ff;
+        text-shadow: 1px 1px 10px #40aadb;
         margin: 10px;
     }
 }
@@ -55,7 +55,9 @@ label {
     display: inline-block;
     margin: 5px;
     cursor: pointer;
-    color: #ff00d4;
+    color: #ffffff;
+    text-shadow: 0px 0px 10px #1f5a9e,
+                     0px 0px 20px #0c2f7c;
 }
 
 /* Body index*/
@@ -65,8 +67,8 @@ label {
     display: grid;
     place-items: center;
     color: #ffffff;
-    text-shadow: 0px 0px 10px #ff00d4,
-                 0px 0px 20px #b6119a;
+    text-shadow: 0px 0px 10px #1f5a9e,
+                     0px 0px 20px #0c2f7c;
 }
 
 
@@ -101,8 +103,8 @@ label {
         display: grid;
         place-items: center;
         color: #ffffff;
-        text-shadow: 0px 0px 10px #ff00d4,
-                     0px 0px 20px #b6119a;
+        text-shadow: 0px 0px 10px #1f5a9e,
+                     0px 0px 20px #0c2f7c;
     }
     img {
         margin: 20px;
@@ -127,8 +129,8 @@ label {
         display: grid;
         place-items: center;
         color: #ffffff;
-        text-shadow: 0px 0px 10px #ff00d4,
-                     0px 0px 20px #b6119a;
+        text-shadow: 0px 0px 10px #1f5a9e,
+                     0px 0px 20px #0c2f7c;
     }
     img {
         margin: 20px;

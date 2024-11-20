@@ -116,10 +116,12 @@ if (carritoDropdown && contadorProductos && totalPagar && listaCarrito && iconoC
       <h3>Total:</h3>
       <span class="total-pagar">$${total.toFixed(2)}</span>
       <div class="finalizar-compra">
-        <button id="openModal" class="boton botonModal" type="button">
-          <div class="fondo-boton"></div>
-          <h4>Finalizar Compra</h4>
-        </button>
+        <a href="./finalizarcompra.html">
+          <button id="openModal" class="boton botonModal" type="button">
+            <div class="fondo-boton"></div>
+            <h4>Finalizar Compra</h4>
+          </button>
+        </a>
       </div>`;
 
       carritoDropdown.addEventListener('click', (event) => {

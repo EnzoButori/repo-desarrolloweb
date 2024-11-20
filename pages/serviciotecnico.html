@@ -15,14 +15,12 @@
 </head>
 <body class="body">
   <header class="header">
-        <div class="navimg">
-          <a class="navimg" href="../index.html">
-            <img src="../imagenes/DELTAIcon.png" alt="" width="30" height="30">
-          </a>
-        </div>
-        <div class="marca">
-          <a class="navbar-brand" href="./index.html">Mundo Delta</a>
-        </div>
+    <div class="marca">
+      <a class="navimg" href="../index.html">
+        <img src="../imagenes/DELTAIcon.png" alt="" width="30" height="30">
+      </a>
+      <a class="navbar-brand" href="../index.html">Mundo Delta</a>
+    </div>
       <nav class="navbar">
         <div class="navul">
           <ul>
@@ -67,12 +65,15 @@
           </div>
           <div class="cart-total">
             <h3>Total:</h3>
-            <span class="total-pagar">$0</span>
-            <div class="finalizar-compra">
-              <button type="button">
-                <h4>Finalizar Compra</h4>
-              </button>
-            </div>
+              <span class="total-pagar">$${total.toFixed(2)}</span>
+              <div class="finalizar-compra">
+                <a href="./finalizarcompra.html">
+                  <button id="openModal" class="boton botonModal" type="button">
+                    <div class="fondo-boton"></div>
+                    <h4>Finalizar Compra</h4>
+                  </button>
+                </a>
+              </div>
           </div>
         </div>
       </div>

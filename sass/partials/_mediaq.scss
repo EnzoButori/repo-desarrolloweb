@@ -1,5 +1,47 @@
 @media (max-width: 699px){
-
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        background: linear-gradient(to right, rgb(255, 255, 255), rgb(249, 139, 253));
+        height: 140px;
+        .marca {
+            width: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            margin: 10px;
+        }
+        .navimg {
+            width: 50px;
+            margin: 10px;
+            img{
+                border-radius: 50%;
+            }
+        }
+        
+        li {
+            text-decoration: none;
+            list-style: none;
+            display: inline-block;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            margin: 10px;
+            width: auto;
+            height: auto;
+            font-size: auto;
+        }
+    
+        li:hover, li a:hover{
+            background: #ff00f2;
+            color: white;
+            border-radius: 12px;
+        }
+    }
     .intro {
         h2 {
             display: grid;
@@ -175,7 +217,7 @@
             display: flex;
             align-items: center;
             justify-content: space-evenly;
-            margin: 15px;
+            margin: 10px;
         }
         .navimg {
             width: 50px;
@@ -193,8 +235,9 @@
             text-align: center;
             align-items: center;
             margin: 10px;
-            width: 120px;
-            height: 30px;
+            width: auto;
+            height: auto;
+            font-size: auto;
         }
     
         li:hover, li a:hover{
@@ -335,6 +378,23 @@
         color: #000;
     }
     
+    .intro {
+        h2 {
+            display: grid;
+            place-items: center;
+            color: #ffffff;
+            text-shadow: 0px 0px 10px #ff00d4,
+                         0px 0px 20px #b6119a;
+        }
+        .parrafo {
+            color: #000000;
+            display: grid;
+            place-self: center;
+            width: 50%;
+            text-shadow: 1px 1px 10px #ff00ff;
+            margin: 10px;
+        }
+    }
 
     .container-items-ap {
         display: grid;

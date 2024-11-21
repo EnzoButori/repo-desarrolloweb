@@ -11,10 +11,21 @@ const emailInput = document.getElementById('email-compra');
 const cpInput = document.getElementById('cp');
 const paisSelect = document.getElementById('Pais');
 const cerrar = document.getElementsByClassName('salir');
+const btnMenu = document.querySelector(".btnMenu");
+const navUl = document.querySelector(".navul");
 const dbUrl = '../json/db.json';
 
 let carrito = {};
 let productos = [];
+
+
+if (btnMenu && navUl) {
+  btnMenu.addEventListener("click", () => {
+    navUl.classList.toggle("show"); 
+  });
+} else {
+  console.error("btnMenu o navUl no se encontraron en el DOM.");
+}
 
 if (checkbox && content) {
   checkbox.addEventListener('change', () => {

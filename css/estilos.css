@@ -43,7 +43,7 @@
   background: #80b2eb;
   border-radius: 12px;
 }
-.header .menu-btn {
+.header .btnMenu {
   position: relative;
   display: none;
   width: 40px;
@@ -51,20 +51,6 @@
   background-color: transparent;
   border: #616161;
   cursor: pointer;
-}
-
-.carrito-temporizador {
-  display: flex;
-  position: absolute;
-  right: 10px;
-  top: 15px;
-  width: 200px;
-}
-.carrito-temporizador p {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 200px;
 }
 
 .empty-cart-message {
@@ -900,63 +886,41 @@ label {
 }
 
 @media (max-width: 699px) {
-  .header {
+  .navbar .btnMenu {
     display: flex;
+    color: #fff;
+    position: fixed;
+    right: 10px;
+  }
+  .navbar .navul {
+    display: none;
     flex-direction: column;
-    align-items: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    background: linear-gradient(to right, rgb(255, 255, 255), rgb(249, 139, 253));
-    height: 140px;
-  }
-  .header .marca {
+    position: fixed;
+    top: 70px;
+    right: 30px;
+    background-color: #535abd;
     width: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    margin: 10px;
-  }
-  .header .navimg {
-    width: 50px;
-    margin: 10px;
-  }
-  .header .navimg img {
-    border-radius: 50%;
-  }
-  .header li {
-    text-decoration: none;
-    list-style: none;
-    display: inline-block;
-    justify-content: center;
     text-align: center;
-    align-items: center;
-    margin: 10px;
-    width: auto;
-    height: auto;
-    font-size: auto;
-  }
-  .header li:hover, .header li a:hover {
-    background: #ff00f2;
-    color: white;
     border-radius: 12px;
   }
-  .intro h2 {
-    display: grid;
-    place-items: center;
-    color: #ffffff;
-    text-shadow: 0px 0px 10px #ff00d4, 0px 0px 20px #b6119a;
-    margin: 10px;
+  .navbar .navul.show {
+    display: flex;
   }
-  .parrafo {
-    display: grid;
-    place-self: center;
-    width: 75%;
+  .intro {
+    width: auto;
+  }
+  .intro h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: auto;
   }
   .productos {
+    margin-right: 40px;
     display: grid;
     place-self: center;
-    width: 500px;
+    width: 300px;
   }
   .productos .slide {
     margin: 20px;
@@ -973,6 +937,10 @@ label {
     transition: all 0.5s;
     transform: scale(1.1);
   }
+  .sobre-nosotros {
+    margin-right: 40px;
+    width: 300px;
+  }
   .sobre-nosotros img {
     margin: 20px;
     display: grid;
@@ -980,6 +948,10 @@ label {
     border-radius: 24px;
     width: 300px;
     box-shadow: 7px 13px 25px #000;
+  }
+  .servicio {
+    margin-right: 40px;
+    width: 300px;
   }
   .servicio img {
     margin: 20px;
@@ -1017,8 +989,8 @@ label {
     height: 15px;
   }
   .cont-footer img {
-    height: 30px;
-    width: 30px;
+    height: 40px;
+    width: 40px;
   }
   .container-items-ap {
     display: grid;
@@ -1080,172 +1052,33 @@ label {
     margin-left: 10px;
   }
 }
-@media (min-width: 700px) and (max-width: 1261px) {
-  .header {
+@media (min-width: 700px) and (max-width: 1061px) {
+  .navbar .btnMenu {
     display: flex;
+    color: #fff;
+    position: fixed;
+    right: 10px;
+  }
+  .navbar .navul {
+    display: none;
     flex-direction: column;
-    align-items: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    background: linear-gradient(to right, rgb(255, 255, 255), rgb(249, 139, 253));
-    height: 140px;
-  }
-  .header .marca {
+    position: fixed;
+    top: 70px;
+    right: 30px;
+    background-color: #535abd;
     width: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    margin: 10px;
-  }
-  .header .navimg {
-    width: 50px;
-    margin: 10px;
-  }
-  .header .navimg img {
-    border-radius: 50%;
-  }
-  .header li {
-    text-decoration: none;
-    list-style: none;
-    display: inline-block;
-    justify-content: center;
     text-align: center;
-    align-items: center;
-    margin: 10px;
-    width: auto;
-    height: auto;
-    font-size: auto;
-  }
-  .header li:hover, .header li a:hover {
-    background: #ff00f2;
-    color: white;
     border-radius: 12px;
   }
-  .carrito-temporizador {
+  .navbar .navul.show {
     display: flex;
-    position: absolute;
-    right: 10px;
-    top: 15px;
-    width: 200px;
-  }
-  .carrito-temporizador p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 200px;
-  }
-  .icon-container {
-    top: 20px;
-    right: 10px;
-  }
-  .empty-cart-message {
-    display: grid;
-    place-self: center;
-  }
-  .container-cart-products {
-    position: absolute;
-    top: 50px;
-    right: 0;
-    background-color: #fff;
-    width: 400px;
-    z-index: 1;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-    display: none;
-  }
-  .cart-products-list {
-    max-height: 300px;
-    overflow-y: auto;
-    border-bottom: 1px solid #000;
-  }
-  .cart-product {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px 20px;
-    border-bottom: 1px solid #ddd;
-  }
-  .info-cart-product {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    flex-grow: 1;
-  }
-  .cantidad-productos-carrito {
-    font-size: 14px;
-    color: #555;
-    width: 20px;
-    text-align: center;
-  }
-  .nombre-producto {
-    font-size: 16px;
-    color: #333;
-    flex-grow: 1;
-  }
-  .precio-producto-carrito {
-    font-weight: 700;
-    color: #000;
-    min-width: 70px;
-    text-align: right;
-  }
-  .quantity-buttons {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-  }
-  .quantity-button {
-    cursor: pointer;
-    background-color: #ddd;
-    border: none;
-    border-radius: 5px;
-    width: 25px;
-    height: 25px;
-    font-size: 18px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #333;
-  }
-  .quantity-button:hover {
-    background-color: #ccc;
-  }
-  .icon-close {
-    cursor: pointer;
-    width: 25px;
-    height: 25px;
-    color: #333;
-  }
-  .icon-close:hover {
-    color: #ff00f2;
-  }
-  .cart-total {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    font-size: 18px;
-    font-weight: 700;
-    color: #333;
-  }
-  .total-pagar {
-    font-size: 20px;
-    font-weight: 900;
-    color: #000;
   }
   .intro h2 {
-    display: grid;
-    place-items: center;
-    color: #ffffff;
-    text-shadow: 0px 0px 10px #ff00d4, 0px 0px 20px #b6119a;
-  }
-  .intro .parrafo {
-    color: #000000;
-    display: grid;
-    place-self: center;
-    width: 50%;
-    text-shadow: 1px 1px 10px #ff00ff;
-    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: auto;
   }
   .container-items-ap {
     display: grid;

@@ -1,4 +1,4 @@
-@media (max-width: 699px){
+@media (max-width: 799px){
    
     .navbar {
         .btnMenu {
@@ -26,7 +26,34 @@
         }
     }
 
-    
+    .icon-container{
+        position: fixed;
+        margin-right: 50px;
+        align-items: center;
+    }
+
+    .container-cart-products {
+        width: 350px;
+    }
+    .cart-products-list{
+        padding: 10px;
+    }
+    .cart-product{
+        padding: 10px;
+    }
+    .info-cart-product{
+        gap: 5px;
+    }
+    .nombre-producto{
+        padding: 10px;
+    }
+    .cart-total {
+        padding: 10px;
+    }
+    .boton {
+        padding: 5px 10px;
+    }
+
 
     .intro{
         width: auto;
@@ -85,7 +112,15 @@
             width: 300px;
             box-shadow: 7px 13px 25px #000;
         } 
-    } 
+    }
+
+    .sop{
+        width: 70%;
+    }
+
+    .presupuesto{
+        width: 70%;
+    }
 
     .footer {
         display: flex;
@@ -122,6 +157,25 @@
         width: 40px; 
     }
 
+    .container-iphones {
+        width: 300px;
+        place-self: center;
+    }
+
+    .container-macbooks{
+        width: 300px;
+        place-self: center;
+    }
+
+    .container-airpods {
+        width: 300px;
+        place-self: center;
+    }
+
+    .slide{
+        width: 300px;
+    }
+
     .container-items-ap {
         display: grid;
         grid-template-columns: 1fr;
@@ -131,11 +185,27 @@
     }
 
     .container-items-mc {
-        display: grid;
         grid-template-columns: repeat(1, 1fr);
-        gap: 50px;
+        gap: 20px;
         margin: 50px;
         margin-bottom: 250px;
+        width: 300px;
+        img{
+            object-fit: contain;
+            border-radius: 10px;
+        }
+        .item-mc {
+            width: 300px;
+           img {
+                width: 100%;
+                height: 120px;
+                border-radius: 10px 10px 0 0;
+                transition: all .5s;
+            } 
+        }
+        .info-product-mc{
+            width: 300px;
+        }
     }
 
     .container-items {
@@ -143,6 +213,10 @@
         gap: 20px;
         margin: 50px;
         margin-bottom: 250px;
+        img{
+            object-fit: contain;
+            border-radius: 10px;
+        }
     }
 
     .item img {
@@ -152,12 +226,7 @@
         transition: all .5s;
     }
 
-    .item-mc img {
-        width: 100%;
-        height: 120px;
-        border-radius: 10px 10px 0 0;
-        transition: all .5s;
-    }
+    
 
     .forms {
         width: 70%;
@@ -169,28 +238,80 @@
     
     .About {
         width: 70%;
-        background-color: #57027f;
-        padding: 30px;
-        margin: auto;
-        margin-top: 100px;
-        border-radius: 16px;
-        color: white;
-        box-shadow: 7px 13px 37px #000;
-        h4 {
-            font-size: 26px;
-            margin-bottom: 15px;
-            color: #e648be;
-        }
     }
+
     .location {
         width: 70%;
         .mapa {
+            width: 50%;
+            height: 30%;
             margin-left: 10px;
+            margin-top: 60px;
         }
     }
+
+    .main{
+        width: 350px;
+        .datos-de-contacto{
+            width: 250px;
+            .email-compra{
+                width: 250px;
+            }
+        }
+        .contenedor-productos{
+            width: 250px;
+
+        }
+        .productos-fin{
+            width: 250px;
+        }
+        .entrega{
+            width: 250px;
+            .input-entrega{
+                width: 250px;
+            }
+        }
+        .direccion{
+            width: 250px;
+        }
+        .envio-sucursal{
+            width: 250px;
+            .sucursales{
+                width: 220px;
+            }
+        }
+        .pago{
+            width: 250px;
+            .input-pago{
+                width: 250px;
+            }
+            .input-corto{
+                width: 250px;
+            }
+        }
+        .completar-todo{
+            width: 200px;
+            place-self: center;
+        }
+        .Enviar {
+            width: 240px;
+        }
+    }
+    
+    .completar-todo{
+        display: none;
+        justify-content: center;
+        align-items: center;
+        color: rgb(165, 0, 0);
+    }
+    
+    .completar-todo.mostrar{
+        display: flex;
+    }
+    
 }
 
-@media (min-width: 700px) and (max-width: 1061px) {
+@media (min-width: 700px) and (max-width: 1240px) {
 
     .navbar {
         .btnMenu {
@@ -218,6 +339,35 @@
         }
     }
 
+    .icon-container{
+        position: fixed;
+        margin-right: 50px;
+        align-items: center;
+    }
+
+    .container-cart-products {
+        width: 350px;
+    }
+    .cart-products-list{
+        padding: 10px;
+    }
+    .cart-product{
+        padding: 10px;
+    }
+    .info-cart-product{
+        gap: 5px;
+    }
+    .nombre-producto{
+        padding: 10px;
+    }
+    .cart-total {
+        padding: 10px;
+    }
+    .boton {
+        padding: 5px 10px;
+    }
+    
+    
     .intro{
         h2{
             display: flex;
@@ -226,6 +376,10 @@
             text-align: center;
             font-size: auto;
         }
+    }
+
+    .location {
+        margin-bottom: 300px;
     }
 
     .container-items-ap {
@@ -238,10 +392,14 @@
 
     .container-items-mc {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         gap: 50px;
         margin: 50px;
         margin-bottom: 250px;
+    }
+
+    .presupuesto{
+        margin-bottom: 300px;
     }
 
 

@@ -52,9 +52,21 @@ h4{
     }
 }
 
+.completar-todo{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    color: rgb(165, 0, 0);
+}
+
+.completar-todo.mostrar{
+    display: flex;
+}
+
 .direccion {
     width: 400px;
     height: 30px;
+    margin-bottom: 10px;
 }
 
 .pago{
@@ -188,11 +200,15 @@ h4{
       color: #333;
     }
     svg {
-      width: 50px;
-      height: 50px;
+      width: 30px;
+      height: 30px;
       margin: 0 auto;
       fill: #4caf50; 
     }button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        place-self: center;
         margin-top: 1.5rem;
         padding: 0.8rem 1.2rem;
         background-color: #4caf50;

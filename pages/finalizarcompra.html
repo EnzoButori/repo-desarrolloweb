@@ -116,7 +116,11 @@
                 <option value="Chile">Chile</option>
                 <option value="Uruguay">Uruguay</option>
             </select>
-            <input placeholder="Código Postal" class="input-entrega" type="text" name="cp" id="cp">
+            <input placeholder="Código Postal" class="input-entrega" type="number" name="cp" id="cp">
+            <h6>Envio a domicilio</h6>
+            <div class="envio-direccion">
+              <input placeholder="Domicilio" class="direccion" type="text" name="direccion" id="direccion">
+            </div>
             <h6>Retiro en sucursal</h6>
             <div class="envio-sucursal">
               <input class="check-sucursal" type="checkbox" name="check-sucursal" id="sucursal">
@@ -124,23 +128,22 @@
                 <option value="bananero">1768 71st St, Miami Beach, FL 33141, United States.</option>
               </select>
             </div>
-            <h6>Envio a domicilio</h6>
-            <div class="envio-direccion">
-              <input placeholder="Domicilio" class="direccion" type="text" name="direccion" id="direccion">
-            </div>
         </form>
     </div>
 
     <div class="pago">
       <h4>Metodo de Pago:</h4>
       <h6>Numero de tarjeta</h6>
-      <input class="input-pago" placeholder="XXXX-XXXX-XXXX-XXXX" type="text" name="num-tarjeta" id="num-tarjeta">
+      <input class="input-pago" placeholder="XXXX-XXXX-XXXX-XXXX" type="number" name="num-tarjeta" id="num-tarjeta">
       <h6>Titular de la tarjeta</h6>
       <input class="input-pago" placeholder="Jorge Sebastian Lopez" type="text" name="titular" id="titular">
       <h6>Código de Verificación de Tarjeta</h6>
-      <input class="input-corto" placeholder="Cvv" type="text" name="cvv" id="cvv">
+      <input class="input-corto" placeholder="Cvv" type="number" name="cvv" id="cvv">
       <h6>Fecha de vencimiento</h6>
       <input class="input-corto" type="month" name="exp" id="exp">
+    </div>
+    <div class="completar-todo">
+      <h6>* Complete todos los campos para continuar</h6>
     </div>
     <button class="Enviar" type="button">
       <h5>Finalizar Compra</h4>
